@@ -26,6 +26,7 @@ body {
 
   .text-vibrant-gradient {
     background: linear-gradient(135deg, #06b6d4 0%, #1e3a8a 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
