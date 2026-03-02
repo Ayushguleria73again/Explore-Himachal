@@ -32,16 +32,16 @@ export function FestivalCalendar() {
     <section className="py-24 px-6 max-w-7xl mx-auto overflow-hidden">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
         <div>
-          <h2 className="text-[11px] uppercase tracking-[0.5em] text-emerald-500 dark:text-emerald-400 font-black mb-4 flex items-center gap-2">
+          <h2 className="text-[11px] uppercase tracking-[0.5em] text-emerald-500 font-black mb-4 flex items-center gap-2">
             <Sparkles size={14} /> Season of Soul
           </h2>
-          <p className="text-4xl md:text-5xl font-black tracking-tighter text-gray-950 dark:text-white">
-            Current in <span className="text-emerald-600 dark:text-emerald-400">{MONTHS[currentMonth]}.</span>
+          <p className="text-4xl md:text-5xl font-black tracking-tighter text-gray-950">
+            Current in <span className="text-emerald-600">{MONTHS[currentMonth]}.</span>
           </p>
         </div>
-        <div className="flex items-center gap-4 bg-gray-50 dark:bg-slate-900 px-6 py-3 rounded-2xl border border-gray-100 dark:border-slate-800">
+        <div className="flex items-center gap-4 bg-gray-50 px-6 py-3 rounded-2xl border border-gray-100">
            <CalendarIcon className="text-gray-400" size={18} />
-           <span className="text-[10px] uppercase tracking-widest font-black text-gray-500 dark:text-gray-400">Festival Registry 2026</span>
+           <span className="text-[10px] uppercase tracking-widest font-black text-gray-500">Festival Registry 2026</span>
         </div>
       </div>
 
@@ -51,16 +51,16 @@ export function FestivalCalendar() {
             <FestivalCard key={fest.id} fest={fest} idx={idx} isCurrent />
           ))
         ) : (
-          <div className="col-span-full py-12 bg-gray-50 dark:bg-slate-900/50 rounded-[2rem] border border-dashed border-gray-200 dark:border-slate-800 flex flex-col items-center justify-center text-center">
+          <div className="col-span-full py-12 bg-gray-50/50 rounded-[2rem] border border-dashed border-gray-200 flex flex-col items-center justify-center text-center">
             <p className="text-gray-400 font-bold uppercase tracking-widest text-xs mb-2">A Moment of Quiet</p>
-            <p className="text-gray-600 dark:text-gray-400 text-sm">No major festivals currently. The mountains are gathering their breath.</p>
+            <p className="text-gray-600 text-sm">No major festivals currently. The mountains are gathering their breath.</p>
           </div>
         )}
       </div>
 
       {activeFestivals.next.length > 0 && (
         <div className="mt-20">
-          <h3 className="text-xs uppercase tracking-[0.3em] text-gray-400 dark:text-gray-500 font-black mb-8">Coming up in {MONTHS[(currentMonth + 1) % 12]}</h3>
+          <h3 className="text-xs uppercase tracking-[0.3em] text-gray-400 font-black mb-8">Coming up in {MONTHS[(currentMonth + 1) % 12]}</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 opacity-60 hover:opacity-100 transition-opacity duration-500">
              {activeFestivals.next.map((fest, idx) => (
                <FestivalCard key={fest.id} fest={fest} idx={idx} />
@@ -81,8 +81,8 @@ function FestivalCard({ fest, idx, isCurrent = false }: { fest: Festival; idx: n
       transition={{ delay: idx * 0.1 }}
       className={`group relative p-8 rounded-[2.5rem] border transition-all duration-500 ${
         isCurrent 
-          ? "bg-white dark:bg-slate-950 border-gray-100 dark:border-slate-800 hover:border-emerald-500/30 shadow-xl shadow-emerald-900/5"
-          : "bg-gray-50/50 dark:bg-slate-900/30 border-transparent hover:border-gray-200 dark:hover:border-slate-700"
+          ? "bg-white border-gray-100 hover:border-emerald-500/30 shadow-xl shadow-emerald-900/5"
+          : "bg-gray-50/50 border-transparent hover:border-gray-200"
       }`}
     >
       <div className="flex justify-between items-start mb-6">
@@ -95,20 +95,20 @@ function FestivalCard({ fest, idx, isCurrent = false }: { fest: Festival; idx: n
       </div>
 
       <div className="mb-8">
-        <h4 className="text-2xl font-black tracking-tighter text-gray-950 dark:text-white mb-2">{fest.name}</h4>
-        <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
+        <h4 className="text-2xl font-black tracking-tighter text-gray-950 mb-2">{fest.name}</h4>
+        <div className="flex items-center gap-2 text-gray-500">
           <MapPin size={12} />
           <span className="text-[10px] uppercase font-black tracking-widest">{fest.district}</span>
         </div>
       </div>
 
-      <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+      <p className="text-sm text-gray-600 leading-relaxed mb-8">
         {fest.description}
       </p>
 
-      <div className="pt-6 border-t border-gray-100 dark:border-slate-800 flex items-center justify-between">
-         <span className="text-[10px] font-black uppercase text-emerald-600 dark:text-emerald-400 tracking-tighter">Plan Arrival</span>
-         <div className="w-8 h-8 rounded-full bg-emerald-50 dark:bg-emerald-950/30 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-all text-emerald-600">
+      <div className="pt-6 border-t border-gray-100 flex items-center justify-between">
+         <span className="text-[10px] font-black uppercase text-emerald-600 tracking-tighter">Plan Arrival</span>
+         <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-all text-emerald-600">
             →
          </div>
       </div>

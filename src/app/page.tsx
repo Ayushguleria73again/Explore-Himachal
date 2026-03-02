@@ -145,17 +145,17 @@ export default function Home() {
       </section>
 
       {/* Festival Calendar */}
-      <section className="bg-white dark:bg-slate-950 border-t border-gray-100 dark:border-slate-900">
+      <section className="bg-white border-t border-gray-100">
         <FestivalCalendar />
       </section>
 
       {/* Itinerary Planner */}
-      <section className="bg-gray-50/50 dark:bg-slate-950/50 border-t border-gray-100 dark:border-slate-900">
+      <section className="bg-gray-50/50 border-t border-gray-100">
         <ItineraryPlanner />
       </section>
 
       {/* Community Gallery */}
-      <section className="bg-white dark:bg-slate-950 border-t border-gray-100 dark:border-slate-900">
+      <section className="bg-white border-t border-gray-100">
         <CommunityGallery />
       </section>
 

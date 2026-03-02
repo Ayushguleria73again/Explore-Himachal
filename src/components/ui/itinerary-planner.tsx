@@ -89,15 +89,15 @@ export function ItineraryPlanner() {
   return (
     <section className="py-32 px-6 max-w-5xl mx-auto">
       <div className="text-center mb-20">
-        <h2 className="text-[11px] uppercase tracking-[0.5em] text-emerald-500 dark:text-emerald-400 font-black mb-4">The Route Maker</h2>
-        <p className="text-4xl md:text-6xl font-black tracking-tighter text-gray-950 dark:text-white">Design your <br/>Himalayan journey.</p>
+        <h2 className="text-[11px] uppercase tracking-[0.5em] text-emerald-500 font-black mb-4">The Route Maker</h2>
+        <p className="text-4xl md:text-6xl font-black tracking-tighter text-gray-950">Design your <br/>Himalayan journey.</p>
       </div>
 
-      <div className="bg-gray-50 dark:bg-slate-900/50 p-8 md:p-12 rounded-[3.5rem] border border-gray-100 dark:border-slate-800 shadow-2xl shadow-emerald-900/5">
+      <div className="bg-gray-50 p-8 md:p-12 rounded-[3.5rem] border border-gray-100 shadow-2xl shadow-emerald-900/5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           {/* Duration Selector */}
           <div>
-            <label className="text-[10px] uppercase tracking-widest font-black text-gray-400 dark:text-gray-500 mb-4 block">Duration</label>
+            <label className="text-[10px] uppercase tracking-widest font-black text-gray-400 mb-4 block">Duration</label>
             <div className="flex gap-4">
               {[3, 5, 7].map((d) => (
                 <button
@@ -105,8 +105,8 @@ export function ItineraryPlanner() {
                   onClick={() => setDuration(d as Duration)}
                   className={`flex-1 py-4 rounded-2xl text-sm font-black transition-all duration-300 border ${
                     duration === d 
-                      ? "bg-gray-950 text-white border-gray-950 dark:bg-emerald-600 dark:border-emerald-600 dark:text-gray-950" 
-                      : "bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-800 text-gray-400 hover:border-emerald-500"
+                      ? "bg-gray-950 text-white border-gray-950" 
+                      : "bg-white border-gray-200 text-gray-400 hover:border-emerald-500"
                   }`}
                 >
                   {d} Days
@@ -117,7 +117,7 @@ export function ItineraryPlanner() {
 
           {/* Vibe Selector */}
           <div>
-            <label className="text-[10px] uppercase tracking-widest font-black text-gray-400 dark:text-gray-500 mb-4 block">Preferred Vibe</label>
+            <label className="text-[10px] uppercase tracking-widest font-black text-gray-400 mb-4 block">Preferred Vibe</label>
             <div className="flex gap-4">
               {(Object.keys(VIBE_DATA) as Vibe[]).map((v) => (
                 <button
@@ -125,8 +125,8 @@ export function ItineraryPlanner() {
                   onClick={() => setVibe(v)}
                   className={`flex-1 py-4 px-2 rounded-2xl text-xs font-black transition-all duration-300 border flex flex-col items-center gap-2 ${
                     vibe === v 
-                      ? "bg-gray-950 text-white border-gray-950 dark:bg-emerald-600 dark:border-emerald-600 dark:text-gray-950" 
-                      : "bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-800 text-gray-400 hover:border-emerald-500"
+                      ? "bg-gray-950 text-white border-gray-950" 
+                      : "bg-white border-gray-200 text-gray-400 hover:border-emerald-500"
                   }`}
                 >
                   {VIBE_DATA[v].icon}
@@ -157,11 +157,11 @@ export function ItineraryPlanner() {
               className="space-y-6"
             >
               <div className="flex items-center gap-4 mb-12">
-                 <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-2xl flex items-center justify-center text-emerald-600">
+                 <div className="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600">
                     <Compass size={24} />
                  </div>
                  <div>
-                    <h4 className="text-xl font-black text-gray-900 dark:text-white tracking-tight">Your Route is Ready</h4>
+                    <h4 className="text-xl font-black text-gray-900 tracking-tight">Your Route is Ready</h4>
                     <p className="text-xs text-gray-500 font-bold uppercase tracking-widest">{duration} Days in the Realm of {vibe}</p>
                  </div>
               </div>
@@ -173,19 +173,19 @@ export function ItineraryPlanner() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: idx * 0.1 }}
-                    className="p-8 bg-white dark:bg-slate-950 rounded-[2.5rem] border border-gray-100 dark:border-slate-800 shadow-sm relative overflow-hidden group"
+                    className="p-8 bg-white rounded-[2.5rem] border border-gray-100 shadow-sm relative overflow-hidden group"
                   >
-                    <div className="absolute top-0 right-0 p-8 text-[4rem] font-black text-gray-50 dark:text-slate-900 -z-10 group-hover:text-emerald-500/5 transition-colors">
+                    <div className="absolute top-0 right-0 p-8 text-[4rem] font-black text-gray-50 -z-10 group-hover:text-emerald-500/5 transition-colors">
                       {step.day}
                     </div>
-                    <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-black text-[10px] uppercase tracking-widest mb-4">
+                    <div className="flex items-center gap-2 text-emerald-600 font-black text-[10px] uppercase tracking-widest mb-4">
                       <Clock size={12} /> Day {step.day}
                     </div>
-                    <h5 className="text-lg font-black text-gray-950 dark:text-white mb-2">{step.district}</h5>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 font-bold mb-6 flex items-center gap-2">
+                    <h5 className="text-lg font-black text-gray-950 mb-2">{step.district}</h5>
+                    <p className="text-sm text-gray-500 font-bold mb-6 flex items-center gap-2">
                        <MapPin size={12} className="text-gray-300" /> {step.location}
                     </p>
-                    <div className="p-4 bg-gray-50 dark:bg-slate-900 rounded-xl text-xs font-black text-emerald-700 dark:text-emerald-300 border border-emerald-100 dark:border-emerald-900/30">
+                    <div className="p-4 bg-gray-50 rounded-xl text-xs font-black text-emerald-700 border border-emerald-100">
                       {step.activity}
                     </div>
                   </motion.div>
@@ -194,7 +194,7 @@ export function ItineraryPlanner() {
 
               <div className="pt-12 text-center">
                  <p className="text-[10px] text-gray-400 uppercase tracking-widest font-black mb-4">Note: This is a suggested route. Every mountain path has its own timing.</p>
-                 <button className="text-emerald-600 dark:text-emerald-400 font-black text-xs uppercase tracking-widest hover:underline">Download Archive PDF</button>
+                 <button className="text-emerald-600 font-black text-xs uppercase tracking-widest hover:underline">Download Archive PDF</button>
               </div>
             </motion.div>
           )}

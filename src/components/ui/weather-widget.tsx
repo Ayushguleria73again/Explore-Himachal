@@ -89,11 +89,11 @@ export function WeatherWidget({ lat, lon, name }: WeatherWidgetProps) {
   }, [lat, lon]);
 
   if (loading) return (
-    <div className="flex items-center gap-4 bg-gray-50 dark:bg-slate-900 px-6 py-4 rounded-3xl animate-pulse border border-gray-100 dark:border-slate-800">
-      <div className="w-10 h-10 bg-gray-200 dark:bg-slate-800 rounded-xl" />
+    <div className="flex items-center gap-4 bg-gray-50 px-6 py-4 rounded-3xl animate-pulse border border-gray-100">
+      <div className="w-10 h-10 bg-gray-200 rounded-xl" />
       <div className="space-y-2">
-        <div className="h-4 w-12 bg-gray-200 dark:bg-slate-800 rounded" />
-        <div className="h-2 w-20 bg-gray-100 dark:bg-slate-800 rounded" />
+        <div className="h-4 w-12 bg-gray-200 rounded" />
+        <div className="h-2 w-20 bg-gray-100 rounded" />
       </div>
     </div>
   );
@@ -104,17 +104,17 @@ export function WeatherWidget({ lat, lon, name }: WeatherWidgetProps) {
     <div className="relative group">
       <div 
         onClick={() => setShowForecast(!showForecast)}
-        className="flex items-center gap-4 bg-gray-50 dark:bg-slate-900 px-6 py-4 rounded-3xl border border-gray-100 dark:border-slate-800 group hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-500 cursor-pointer"
+        className="flex items-center gap-4 bg-gray-50 px-6 py-4 rounded-3xl border border-gray-100 group hover:bg-white hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-500 cursor-pointer"
       >
-        <div className="p-2 bg-white dark:bg-slate-800 rounded-xl shadow-sm group-hover:scale-110 transition-transform duration-500">
+        <div className="p-2 bg-white rounded-xl shadow-sm group-hover:scale-110 transition-transform duration-500">
           {WEATHER_ICONS[weather.condition] || <Cloud size={24} />}
         </div>
         <div className="flex-1">
           <div className="flex items-baseline gap-1">
-            <span className="text-2xl font-black text-gray-900 dark:text-white">{weather.temp}°C</span>
+            <span className="text-2xl font-black text-gray-900">{weather.temp}°C</span>
             <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-none">{weather.condition}</span>
           </div>
-          <p className="text-[9px] font-black text-emerald-600 dark:text-emerald-400 uppercase tracking-widest">Live in {name}</p>
+          <p className="text-[9px] font-black text-emerald-600 uppercase tracking-widest">Live in {name}</p>
         </div>
         <div className={`text-gray-300 transition-transform duration-300 ${showForecast ? "rotate-180" : ""}`}>
            <ChevronDown size={14} />
@@ -129,15 +129,15 @@ export function WeatherWidget({ lat, lon, name }: WeatherWidgetProps) {
             exit={{ opacity: 0, scale: 0.95, y: -10 }}
             className="absolute top-full left-0 right-0 mt-2 z-20"
           >
-            <div className="grid grid-cols-5 gap-2 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md p-3 rounded-[2rem] border border-gray-100 dark:border-slate-800 shadow-2xl">
+            <div className="grid grid-cols-5 gap-2 bg-white/95 backdrop-blur-md p-3 rounded-[2rem] border border-gray-100 shadow-2xl">
                {weather.forecast.map((day, i) => (
-                 <div key={i} className="flex flex-col items-center gap-1.5 p-2 rounded-2xl hover:bg-emerald-50 dark:hover:bg-emerald-950/30 transition-colors">
+                 <div key={i} className="flex flex-col items-center gap-1.5 p-2 rounded-2xl hover:bg-emerald-50 transition-colors">
                     <span className="text-[7px] font-black uppercase tracking-tighter text-gray-400">{day.date}</span>
                     <div className="text-emerald-500 scale-75">
                       {WEATHER_ICONS[day.condition] || <Cloud size={16} />}
                     </div>
                     <div className="flex flex-col items-center">
-                       <span className="text-[9px] font-black text-gray-900 dark:text-white leading-none">{day.tempMax}°</span>
+                       <span className="text-[9px] font-black text-gray-900 leading-none">{day.tempMax}°</span>
                        <span className="text-[7px] font-bold text-gray-400">{day.tempMin}°</span>
                     </div>
                  </div>

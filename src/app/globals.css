@@ -8,18 +8,11 @@
   --accent-emerald: 16, 185, 129;
 }
 
-.dark {
-  --foreground-rgb: 255, 255, 255;
-  --background-rgb: 2, 6, 23;
-  --accent-emerald: 52, 211, 153;
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @layer utilities {

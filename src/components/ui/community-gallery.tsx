@@ -70,25 +70,25 @@ export function CommunityGallery() {
     <section className="py-32 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
         <div>
-          <h2 className="text-[11px] uppercase tracking-[0.5em] text-emerald-500 dark:text-emerald-400 font-black mb-4 flex items-center gap-2">
+          <h2 className="text-[11px] uppercase tracking-[0.5em] text-emerald-500 font-black mb-4 flex items-center gap-2">
             <Camera size={14} /> Shared Echoes
           </h2>
-          <p className="text-4xl md:text-6xl font-black tracking-tighter text-gray-950 dark:text-white">
+          <p className="text-4xl md:text-6xl font-black tracking-tighter text-gray-950">
             Live from the <br/>highest peaks.
           </p>
         </div>
         <div className="flex flex-col items-start md:items-end gap-6">
            {/* Tab Switcher */}
-           <div className="flex bg-gray-100 dark:bg-slate-900 p-1.5 rounded-2xl border border-gray-100 dark:border-slate-800">
+           <div className="flex bg-gray-100 p-1.5 rounded-2xl border border-gray-100">
               <button 
                 onClick={() => setActiveTab("curated")}
-                className={`px-6 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${activeTab === "curated" ? "bg-white dark:bg-slate-800 text-gray-900 dark:text-white shadow-sm" : "text-gray-400 hover:text-gray-600"}`}
+                className={`px-6 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${activeTab === "curated" ? "bg-white text-gray-900 shadow-sm" : "text-gray-400 hover:text-gray-600"}`}
               >
                 Curated
               </button>
               <button 
                 onClick={() => setActiveTab("live")}
-                className={`px-6 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center gap-2 ${activeTab === "live" ? "bg-white dark:bg-slate-800 text-gray-900 dark:text-white shadow-sm" : "text-gray-400 hover:text-gray-600"}`}
+                className={`px-6 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center gap-2 ${activeTab === "live" ? "bg-white text-gray-900 shadow-sm" : "text-gray-400 hover:text-gray-600"}`}
               >
                 <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
                 Live Feed
@@ -97,7 +97,7 @@ export function CommunityGallery() {
 
            <button 
              onClick={() => setIsModalOpen(true)}
-             className="px-8 py-4 bg-gray-950 dark:bg-emerald-600 text-white dark:text-gray-950 text-[10px] uppercase tracking-[0.3em] font-black rounded-full hover:bg-emerald-600 dark:hover:bg-emerald-500 transition-all shadow-xl shadow-gray-950/20 active:scale-95"
+             className="px-8 py-4 bg-gray-950 text-white text-[10px] uppercase tracking-[0.3em] font-black rounded-full hover:bg-emerald-600 transition-all shadow-xl shadow-gray-950/20 active:scale-95"
            >
               Submit Your View
            </button>
@@ -124,7 +124,7 @@ export function CommunityGallery() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className={`relative group overflow-hidden rounded-[2.5rem] bg-gray-100 dark:bg-slate-900 border border-gray-100 dark:border-slate-800 ${img.span || "col-span-1 row-span-1"}`}
+                className={`relative group overflow-hidden rounded-[2.5rem] bg-gray-100 border border-gray-100 ${img.span || "col-span-1 row-span-1"}`}
               >
                 <Image
                   src={img.src}
