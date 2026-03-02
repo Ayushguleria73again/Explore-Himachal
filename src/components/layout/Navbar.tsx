@@ -35,11 +35,11 @@ export function Navbar({ isDetail = false, title = "Himachal." }: { isDetail?: b
         {/* Logo Section */}
         <div className="flex items-center gap-12">
           <NextLink href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-gray-950 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-xl shadow-gray-900/10 group-hover:bg-emerald-600 transition-all duration-500">
+            <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-xl shadow-emerald-600/20 group-hover:bg-emerald-500 transition-all duration-500">
               H
             </div>
             <div className="flex flex-col">
-               <span className="text-xl font-black tracking-tighter uppercase text-gray-950 leading-none">Himachal</span>
+               <span className="text-xl font-black tracking-tighter uppercase text-emerald-900 leading-none">Himachal</span>
                <span className="text-[9px] uppercase tracking-[0.4em] text-emerald-500 font-black mt-1">Archive.</span>
             </div>
           </NextLink>
@@ -50,7 +50,7 @@ export function Navbar({ isDetail = false, title = "Himachal." }: { isDetail?: b
               <NextLink 
                 key={link.name}
                 href={link.href}
-                className="group flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-gray-500 hover:text-gray-950 transition-all font-black relative"
+                className="group flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-emerald-800/70 hover:text-emerald-900 transition-all font-black relative"
               >
                 <span className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 text-emerald-500">
                    {link.icon}
@@ -65,14 +65,14 @@ export function Navbar({ isDetail = false, title = "Himachal." }: { isDetail?: b
         <div className="flex items-center gap-6">
           <NextLink 
             href="/contact" 
-            className="hidden sm:flex px-8 py-3 bg-gray-950 text-white text-[10px] uppercase tracking-[0.3em] font-black rounded-full hover:bg-emerald-600 transition-all shadow-xl shadow-gray-950/20 active:scale-95"
+            className="hidden sm:flex px-8 py-3 bg-emerald-600 text-white text-[10px] uppercase tracking-[0.3em] font-black rounded-full hover:bg-emerald-500 transition-all shadow-xl shadow-emerald-600/20 active:scale-95"
           >
             Connect
           </NextLink>
 
           {/* Mobile Toggle */}
           <button 
-            className="lg:hidden p-2 text-gray-950 bg-gray-50 rounded-xl"
+            className="lg:hidden p-2 text-emerald-900 bg-emerald-50 rounded-xl"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -95,7 +95,7 @@ export function Navbar({ isDetail = false, title = "Himachal." }: { isDetail?: b
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-between p-5 bg-gray-50 rounded-2xl text-[14px] uppercase tracking-widest text-gray-900 font-black hover:bg-emerald-50 hover:text-emerald-600 transition-all"
+                  className="flex items-center justify-between p-5 bg-emerald-50/50 rounded-2xl text-[14px] uppercase tracking-widest text-emerald-900 font-black hover:bg-emerald-50 hover:text-emerald-600 transition-all"
                 >
                   <span className="flex items-center gap-4">
                     {link.icon}
@@ -108,7 +108,7 @@ export function Navbar({ isDetail = false, title = "Himachal." }: { isDetail?: b
                 <NextLink 
                   href="/contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-center p-6 bg-gray-950 text-white rounded-2xl text-[12px] uppercase tracking-widest font-black shadow-lg shadow-gray-950/20"
+                  className="flex items-center justify-center p-6 bg-emerald-600 text-white rounded-2xl text-[12px] uppercase tracking-widest font-black shadow-lg shadow-emerald-600/20"
                 >
                   Contact Support
                 </NextLink>
