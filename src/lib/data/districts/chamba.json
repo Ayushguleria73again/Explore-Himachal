@@ -1,0 +1,34 @@
+{
+    "id": "chamba",
+    "name": "Chamba",
+    "headquarters": "Chamba",
+    "image": "/images/chamba.png",
+    "shortFact": "A reservoir of ancient stone architecture.",
+    "description": "Chamba is an untouched paradise that has preserved its artistic heritage and medieval temples for over a thousand years.",
+    "history": "Chamba is unique for its well-documented history since 500 A.D., protected by its remote mountain ranges. The ruling family was founded by Raja Maru around 550 A.D., with the original capital at Brahampura (Bharmour). In 920 A.D., Raja Sahil Varman shifted the capital to Chamba town, naming it after his daughter, Champavati. The Laxmi Narayan temple complex stands as a witness to this glorious era. Chamba safely preserved its Pahari culture and exquisite stone architecture even during the peak of external invasions in northern India. It merged with the Indian Union in April 1948.",
+    "culture": "The 'Chamba Rumal', world-renowned for its 'Dorukha' (double-sided) silk embroidery, is a symbol of Chamba's artistic excellence. The 'Minjar Mela' is a unique harvest festival where silken tassels are offered to the Ravi River. Chamba shoes (Chappals) are G.I. tagged for their unique craftsmanship. Folk songs like 'Musaddi' and traditional dances reflect the emotional depth of its people, who still preserve ancient stone-carving techniques.",
+    "stats": {
+        "area": "6,522 sq km",
+        "population": "519,080",
+        "altitude": "996m",
+        "bestTime": "March to October"
+    },
+    "topSpots": [
+        {
+            "name": "Khajjiar",
+            "description": "The 'Mini Switzerland of India', featuring a floating island in the center of a lush meadow."
+        },
+        {
+            "name": "Laxmi Narayan Temple",
+            "description": "A 10th-century complex dedicated to Lord Vishnu and Shiva, featuring exquisite shikhara architecture."
+        },
+        {
+            "name": "Chaugan",
+            "description": "The massive public esplanade in Chamba town, the center of all social and cultural festivals."
+        },
+        {
+            "name": "Manimahesh Lake",
+            "description": "A sacred lake situated at 4,080 meters, home to the annual Manimahesh Yatra."
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "id": "kangra",
+    "name": "Kangra",
+    "headquarters": "Dharamshala",
+    "image": "/images/kangra.png",
+    "shortFact": "The ancient seat of the Trigarta kingdom.",
+    "description": "Kangra is a land of spiritual peaks and historical depth, home to the mighty Dhauladhar range and the spiritual center of Dharamshala.",
+    "history": "Anciently known as Trigarta, Kangra has a recorded history spanning over 3,500 years. It is home to one of the world's oldest surviving royal lineages, the Katoch dynasty. The Kangra Fort, a masterpiece of Himalayan architecture, has withstood numerous invasions. The first recorded invasion was by Mahmud of Ghazni in 1009 A.D., who plundered the fort for its fabled treasures. It was later captured by Muhammad bin Tughluq (1337) and Firuz Shah Tughluq (1351). In 1620, Mughal Emperor Jahangir successfully subdued the fort after a prolonged siege, and it remained under Mughal administration for over 160 years. Raja Sansar Chand reclaimed it in 1786, only to lose it to Maharaja Ranjit Singh and eventually the British East India Company in 1846. The devastating 1905 earthquake marked the end of its military use, but it remains a symbol of resilience today.",
+    "culture": "Kangra is the heart of the 'Kangra School of Painting', known for its delicate brushwork and vibrant depictions of Lord Krishna. The region's culture is deeply spiritual, featuring major temples like Jwalamukhi, where an eternal flame burns without any known fuel source, and Brajeshwari. The 'Kangra Dham' is a culinary heritage where food is cooked in traditional brass charotis. The Gaddi tribes add a nomadic charm with their unique folk music, like 'Musaddi', and traditional dances.",
+    "stats": {
+        "area": "5,739 sq km",
+        "population": "1.51 Million",
+        "altitude": "427m - 6,401m",
+        "bestTime": "March to June"
+    },
+    "topSpots": [
+        {
+            "name": "Kangra Fort",
+            "description": "The oldest surviving fort in the Himalayas, standing on a hillock between the Manjhi and Banganga rivers."
+        },
+        {
+            "name": "Dharamshala",
+            "description": "The spiritual home of the Dalai Lama and the seat of the Tibetan government-in-exile."
+        },
+        {
+            "name": "Masroor Rock Cut Temple",
+            "description": "The 'Ellora of the Hills'—eighth-century monolithic temples carved out of a single piece of sandstone."
+        },
+        {
+            "name": "Bir Billing",
+            "description": "Recognized globally as one of the best paragliding sites in the world."
+        }
+    ]
+}

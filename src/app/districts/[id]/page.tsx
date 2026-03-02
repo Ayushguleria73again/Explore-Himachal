@@ -1,0 +1,128 @@
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import { districtsData } from "@/lib/data/districts";
+import { MapPin, History, Camera, Info } from "lucide-react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { MetaItem } from "@/components/ui/meta-item";
+
+export async function generateStaticParams() {
+  const params = districtsData.map((district) => ({
+    id: district.id,
+  }));
+  return params;
+}
+
+export default async function DistrictPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const district = districtsData.find((d) => d.id === id);
+
+  if (!district) {
+    notFound();
+  }
+
+  return (
+    <main className="bg-white text-gray-900 min-h-screen pb-20">
+      <Navbar isDetail title={`${district.name}.`} />
+
+      <div className="pt-24 max-w-5xl mx-auto px-6">
+        {/* Hero Area */}
+        <div className="relative aspect-[21/9] w-full bg-emerald-50 overflow-hidden mb-16 rounded-3xl shadow-2xl shadow-emerald-900/10 border border-emerald-100">
+          <Image
+            src={district.image}
+            alt={district.name}
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+        </div>
+
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
+          {/* Left Column - Meta */}
+          <div className="space-y-12">
+            <div>
+              <h2 className="text-[10px] uppercase tracking-[0.4em] text-emerald-500 font-black mb-8">Vital Stats</h2>
+              <div className="space-y-6">
+                 <MetaItem label="Main Town" value={district.headquarters} icon={<MapPin className="text-emerald-500" size={16} />} />
+                 <MetaItem label="Total Area" value={district.stats.area || "N/A"} icon={<Info className="text-emerald-500" size={16} />} />
+                 <MetaItem label="Population" value={district.stats.population || "N/A"} icon={<div className="w-4 h-4 rounded-full bg-emerald-500/20" />} />
+              </div>
+            </div>
+
+            <div className="pt-10 border-t border-gray-100">
+              <h2 className="text-[10px] uppercase tracking-[0.4em] text-amber-500 font-black mb-8">Points of Interest</h2>
+              <div className="space-y-8">
+                {district.topSpots.map((spot) => (
+                  <div key={spot.name} className="group">
+                    <h4 className="text-sm font-black uppercase tracking-tight mb-2 group-hover:text-emerald-600 transition-colors">{spot.name}</h4>
+                    <p className="text-[12px] text-gray-500 leading-relaxed font-medium">{spot.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Main Info */}
+          <div className="md:col-span-2 space-y-20">
+            <section>
+              <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-gray-950 mb-10 leading-[1.05]">
+                {district.name} — <br />
+                <span className="text-vibrant-gradient">{district.shortFact}</span>
+              </h1>
+              <p className="text-xl text-gray-600 font-medium leading-relaxed">
+                {district.description}
+              </p>
+            </section>
+
+            <section className="pt-20 border-t border-gray-100 relative">
+               <div className="absolute -top-px left-0 w-24 h-px bg-emerald-500" />
+               <div className="flex items-center gap-4 mb-10">
+                 <div className="p-2.5 bg-emerald-50 rounded-xl text-emerald-600">
+                   <History size={20} strokeWidth={2.5} />
+                 </div>
+                 <h2 className="text-[11px] uppercase tracking-[0.4em] text-gray-950 font-black">Heritage Timeline</h2>
+               </div>
+               <p className="text-gray-500 text-sm leading-[1.8] font-medium first-letter:text-6xl first-letter:font-black first-letter:float-left first-letter:mr-4 first-letter:text-emerald-600 first-letter:leading-[0.8]">
+                 {district.history}
+               </p>
+            </section>
+
+            <section className="pt-20 border-t border-gray-100 relative">
+               <div className="absolute -top-px left-0 w-24 h-px bg-amber-500" />
+               <div className="flex items-center gap-4 mb-10">
+                 <div className="p-2.5 bg-amber-50 rounded-xl text-amber-600">
+                   <div className="w-5 h-5 border-2 border-amber-600 rounded-full flex items-center justify-center font-black text-[10px]">C</div>
+                 </div>
+                 <h2 className="text-[11px] uppercase tracking-[0.4em] text-gray-950 font-black">Cultural Essence</h2>
+               </div>
+               <p className="text-gray-500 text-sm leading-[1.8] font-medium">
+                 {district.culture}
+               </p>
+            </section>
+
+            <section className="pt-20 border-t border-gray-100">
+               <div className="flex items-center gap-4 mb-10">
+                 <div className="p-2.5 bg-sky-50 rounded-xl text-sky-600">
+                   <Camera size={20} strokeWidth={2.5} />
+                 </div>
+                 <h2 className="text-[11px] uppercase tracking-[0.4em] text-gray-950 font-black">Visual Archive</h2>
+               </div>
+               <div className="grid grid-cols-2 gap-6">
+                  <div className="aspect-[4/5] bg-emerald-50 relative overflow-hidden rounded-2xl group">
+                     <Image src={district.image} alt="Gallery 1" fill sizes="50vw" className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                  </div>
+                  <div className="aspect-[4/5] bg-gray-50 flex items-center justify-center rounded-2xl border-2 border-dashed border-gray-100">
+                    <span className="text-[10px] uppercase tracking-widest text-gray-400 font-black text-center px-6">More high altitude <br/>stills coming soon</span>
+                  </div>
+               </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </main>
+  );
+}

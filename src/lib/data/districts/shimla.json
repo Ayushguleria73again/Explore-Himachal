@@ -1,0 +1,34 @@
+{
+    "id": "shimla",
+    "name": "Shimla",
+    "headquarters": "Shimla",
+    "image": "/images/shimla.png",
+    "shortFact": "The legendary 'Queen of Hills'.",
+    "description": "Shimla is a historic blend of colonial Neo-Gothic architecture and quintessential Himachali hospitality perched on the Shivalik ridges.",
+    "history": "Originally a small forest village named after Goddess Shyamala, Shimla rose to prominence in 1864 when it was declared the Summer Capital of British India. For over 80 years, it was the administrative heart of the Indian empire. The Kalka-Shimla Railway, completed in 1903 with 103 tunnels, is now a UNESCO World Heritage site. Post-independence, it became the capital of Himachal Pradesh. Its architecture, featuring the Viceregal Lodge and Gothic churches, remains a unique colonial heritage in the Himalayas.",
+    "culture": "Shimla's culture is a sophisticated blend of colonial elegance and deep-rooted mountain traditions. The Ridge and Mall Road are the social heart of the city. Festivals like the 'Lavi Fair' (dating back over 300 years) at nearby Rampur showcase its trade heritage. The people are known for their distinct woolen attire, 'Siddu' culinary specialties, and a rich history of theater and arts, with the Gaiety Theatre being a historic landmark.",
+    "stats": {
+        "area": "5,131 sq km",
+        "population": "814,010",
+        "altitude": "2,205m",
+        "bestTime": "October to June"
+    },
+    "topSpots": [
+        {
+            "name": "Viceregal Lodge",
+            "description": "The former residence of the British Viceroy, an architectural masterpiece of Jacobethan style."
+        },
+        {
+            "name": "The Ridge & Mall Road",
+            "description": "The cultural hub of Shimla, offering panoramic views of the snow-clad mountains."
+        },
+        {
+            "name": "Jakhoo Temple",
+            "description": "A sacred shrine dedicated to Lord Hanuman, situated at the city's highest point."
+        },
+        {
+            "name": "Tattapani",
+            "description": "Famous for its natural hot sulfur springs and river rafting on the Sutlej."
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "id": "mandi",
+    "name": "Mandi",
+    "headquarters": "Mandi",
+    "image": "/images/mandi.png",
+    "shortFact": "The vibrant 'Varanasi of the Hills'.",
+    "description": "Mandi is a historic commercial and spiritual hub on the banks of the Beas, famous for its ancient stone temples and artistic heritage.",
+    "history": "Mandi, historically 'Mandav Nagar', is named after the sage Mandav. It was a crucial commercial hub on the ancient trade route connecting the plains to Tibet. The present district was formed in 1948 by merging the princely states of Mandi and Suket. The chiefs of these states claim descent from the Sena dynasty of Bengal (Chandravanshi Rajputs). Ajbar Sen founded Mandi Town in 1527 A.D., making it the capital. The town features over 80 stone temples, earning it the title 'Choti Kashi'. The Victoria Bridge, built in 1877, still stands as a colonial engineering heritage.",
+    "culture": "Mandi is hailed as the cultural capital of the state. Its International Shivratri Fair is a grand spectacle where over 200 village deities arrive to pay respects to the presiding deity, Madho Rai (Lord Vishnu). Mandi is famous for its 'Sepu Badi' culinary heritage and traditional silver jewelry. The 'Mandiyali' dialect and a distinct style of hill painting flourished in its royal courts for centuries.",
+    "stats": {
+        "area": "3,950 sq km",
+        "population": "999,777",
+        "altitude": "760m",
+        "bestTime": "October to May"
+    },
+    "topSpots": [
+        {
+            "name": "Rewalsar Lake",
+            "description": "A sacred 'trinity' lake for Hindus, Buddhists, and Sikhs, home to huge floating reed islands."
+        },
+        {
+            "name": "Prashar Lake",
+            "description": "A high-altitude lake with a mysterious floating island and a 14th-century pagoda temple."
+        },
+        {
+            "name": "Bhootnath Temple",
+            "description": "An ancient stone temple of Lord Shiva that forms the spiritual heart of Mandi town."
+        },
+        {
+            "name": "Pandoh Dam",
+            "description": "An embankment dam on the Beas river, diverting water for hydroelectric power."
+        }
+    ]
+}

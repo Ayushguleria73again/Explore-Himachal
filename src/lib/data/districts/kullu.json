@@ -1,0 +1,34 @@
+{
+    "id": "kullu",
+    "name": "Kullu",
+    "headquarters": "Kullu",
+    "image": "/images/kullu.png",
+    "shortFact": "The mystical 'Valley of Gods'.",
+    "description": "Kullu is an enchanting valley framed by the Beas River, famous for its vibrant festivals and hand-woven artistry.",
+    "history": "The history of Kullu dates back approximately 2,000 years. The name is derived from 'Kuluta', found inscribed on first-century coins. Known in ancient texts as 'Kulanthpith' (End of the Habitable World), it remained isolated for centuries. The kingdom was founded in the first century A.D. by Behangamani Pal, a traveler from Prayag who overthrew local Thakurs. Kullu reached its peak under Raja Man Singh, extending its borders to Shimla. In 1660, the capital shifted to Sultanpur when the sacred idol of Lord Raghunath was brought from Ayodhya, marking the birth of the world-famous Kullu Dussehra. The Sikhs briefly held power in 1839 before it was ceded to the British in 1846.",
+    "culture": "The 'Devta' system is the bedrock of Kulluvi culture, where village deities dictate social and religious norms. The region is famous for its hand-woven woolen shawls with geometric patterns and the spirited 'Kulluvi Nati' folk dance. Architecture predominantly follows the 'Kath-Kuni' style, using alternating layers of wood and stone. The International Kullu Dussehra is a spectacle where hundreds of deities arrive on palanquins to pay homage to Lord Raghunath.",
+    "stats": {
+        "area": "5,503 sq km",
+        "population": "437,903",
+        "altitude": "1,279m",
+        "bestTime": "April to June"
+    },
+    "topSpots": [
+        {
+            "name": "Rohtang Pass",
+            "description": "A high-altitude gateway to Lahaul and Spiti, offering snow even in peak summer."
+        },
+        {
+            "name": "Manali",
+            "description": "A global tourism hotspot named after the sage Manu, who is said to have recreated human life here."
+        },
+        {
+            "name": "Naggar Castle",
+            "description": "A 15th-century palace built of earthquake-resistant wood and stone, overlooking the valley."
+        },
+        {
+            "name": "Great Himalayan National Park",
+            "description": "A UNESCO World Heritage site and a sanctuary for rare Himalayan flora and fauna."
+        }
+    ]
+}

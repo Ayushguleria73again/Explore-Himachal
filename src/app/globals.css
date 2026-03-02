@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+
+  --accent-primary: #059669;
+  /* Emerald Green */
+  --accent-secondary: #0284c7;
+  /* Sky Blue */
+  --accent-vibrant: #f59e0b;
+  /* Amber/Orange */
+  --accent-deep: #1e3a8a;
+  /* Deep Indigo */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-vibrant-gradient {
+    background: linear-gradient(135deg, #059669 0%, #0284c7 100%);
+  }
+
+  .text-vibrant-gradient {
+    background: linear-gradient(135deg, #06b6d4 0%, #1e3a8a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

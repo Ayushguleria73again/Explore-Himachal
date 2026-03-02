@@ -1,0 +1,34 @@
+{
+    "id": "sirmaur",
+    "name": "Sirmaur",
+    "headquarters": "Nahan",
+    "image": "/images/sirmaur.png",
+    "shortFact": "The crown of the Shivalik foothills.",
+    "description": "Sirmaur is characterized by its agricultural richness, historical princely legacy, and the sacred Renuka Lake.",
+    "history": "Sirmaur's earliest mention dates to 634 A.D. (as Surughna). The state was founded around 1095 A.D. by Subhans Prakash, a Rajput from Jaisalmer, after a flood destroyed the original capital at Sirmur. The Prakash dynasty ruled for centuries, with Raja Karam Prakash founding Nahan in 1616. A major historical event was Raja Medni Parkash providing asylum to Guru Gobind Singh at Paonta Sahib in 1684. Sirmaur was an independent 11-gun salute princely state until it merged with Himachal Pradesh in 1948.",
+    "culture": "The culture is a blend of royal Rajput traditions and the tribal heritage of the 'Giripar' area. The 'Renuka Fair' is a major spiritual gathering celebrating the legend of Sage Jamadagni and his wife Renuka. Traditional sports like 'Thoda' (archery-based dance) are still vibrant. Sirmaur is known for its brassware, community-centric fairs, and the synthesis of Sikh and Hindu traditions at shrines like Paonta Sahib and Renuka Ji.",
+    "stats": {
+        "area": "2,825 sq km",
+        "population": "529,855",
+        "altitude": "933m",
+        "bestTime": "September to June"
+    },
+    "topSpots": [
+        {
+            "name": "Renuka Lake",
+            "description": "The largest natural lake in the state, believed to be the embodiment of Goddess Renuka."
+        },
+        {
+            "name": "Paonta Sahib",
+            "description": "A historic Sikh shrine where Guru Gobind Singh lived and composed several holy scriptures."
+        },
+        {
+            "name": "Nahan",
+            "description": "A beautifully planned hill city with grand palaces, historical gardens, and colonial streets."
+        },
+        {
+            "name": "Churdhar Peak",
+            "description": "The highest peak in the Shivalik range, offering panoramic views of the Sutlej and Yamuna rivers."
+        }
+    ]
+}

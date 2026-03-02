@@ -1,0 +1,34 @@
+{
+    "id": "kinnaur",
+    "name": "Kinnaur",
+    "headquarters": "Reckong Peo",
+    "image": "/images/kinnaur.png",
+    "shortFact": "The enchanting 'Land of Fairy Tales'.",
+    "description": "Kinnaur is a land of sheer cliffs, lush valleys, and high-altitude orchards where Hinduism and Buddhism meet.",
+    "history": "In mythological accounts, Kinnaur is the land of 'Kinners'—demigods of music and dance. Historically, it was part of the Guge kingdom (10th-11th centuries) and later the Rampur Bushahr state. Legend states the Pandavas spent their exile here. Kinnaur served as a vital link on the Silk Road to Tibet. The friendship between the Bushahr kings and Tibet allowed for centuries of tax-free trade. It was formed as the sixth district of Himachal in 1960. The administrative center is now at Reckong Peo, overlooking the sacred Kinner Kailash peak.",
+    "culture": "Its culture is a unique synthesis where Hinduism and Buddhism coexist. Villages house both temples and 'Gompas' (monasteries). Kinnaur is famous for its world-class apples and the iconic green-felted Kinnauri cap. Intricate wood carvings on temple eaves and the 'Nag' (serpent) deity worship are signatures of Kinnauri heritage. The people are known for their hospitality and traditional songs that recount ancient Himalayan lore.",
+    "stats": {
+        "area": "6,401 sq km",
+        "population": "84,298",
+        "altitude": "2,320m",
+        "bestTime": "April to October"
+    },
+    "topSpots": [
+        {
+            "name": "Sangla Valley",
+            "description": "Regarded as one of the most scenic valleys in the world, famous for its saffron and apple orchards."
+        },
+        {
+            "name": "Kalpa",
+            "description": "A heritage village offering the best sunrise views of the sacred Kinner Kailash massif."
+        },
+        {
+            "name": "Chitkul",
+            "description": "The last inhabited village on the Indo-Tibetan border, known for its pristine beauty."
+        },
+        {
+            "name": "Nako Lake",
+            "description": "A sacred lake situated in the high-altitude cold desert, surrounded by an ancient stone village."
+        }
+    ]
+}

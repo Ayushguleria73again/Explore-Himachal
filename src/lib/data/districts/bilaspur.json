@@ -1,0 +1,34 @@
+{
+    "id": "bilaspur",
+    "name": "Bilaspur",
+    "headquarters": "Bilaspur",
+    "image": "/images/bilaspur.png",
+    "shortFact": "The first planned hill town around a vast lake.",
+    "description": "Bilaspur is a unique township situated around the man-made Gobind Sagar lake, offering water sports and spiritual vistas.",
+    "history": "Formerly known as 'Kahlur', Bilaspur was founded in the 7th century by Bir Chand, a Chandela Rajput from Chanderi. The town of Bilaspur was founded in 1663 by Raja Deep Chand, who shifted the royal seat here. In 1954, the original historic town was submerged entirely as the Sutlej river was dammed to build the Bhakra Dam, leading to the creation of the current planned city—one of the first of its kind in a hill state. It merged with Himachal Pradesh in July 1954.",
+    "culture": "Bilaspur's current cultural life is intertwined with the Gobind Sagar lake. The annual 'Nalwari Fair' is a major cattle and trade event dating back to 1889. Worship of Naina Devi, whose temple overlooks the blue waters from a hilltop, is central to the spiritual life here. Folk dances like 'Gugga' and local songs keep the stories of the original Kahluri kingdom alive among the people who resettled in the new township.",
+    "stats": {
+        "area": "1,167 sq km",
+        "population": "381,956",
+        "altitude": "673m",
+        "bestTime": "September to May"
+    },
+    "topSpots": [
+        {
+            "name": "Naina Devi Temple",
+            "description": "A highly revered Shakti Peeth situated on a hilltop, accessible by a scenic ropeway ride."
+        },
+        {
+            "name": "Gobind Sagar Lake",
+            "description": "A massive man-made reservoir offering paragliding, boating, and water sports activities."
+        },
+        {
+            "name": "Kandror Bridge",
+            "description": "A historic road bridge over the lake, once considered the second-highest bridge in the world."
+        },
+        {
+            "name": "Vyas Cave",
+            "description": "A cave where Rishi Ved Vyas is said to have stayed and meditated during his journey."
+        }
+    ]
+}

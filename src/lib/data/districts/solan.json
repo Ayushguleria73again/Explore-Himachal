@@ -1,0 +1,34 @@
+{
+    "id": "solan",
+    "name": "Solan",
+    "headquarters": "Solan",
+    "image": "/images/solan.png",
+    "shortFact": "The sprawling 'Mushroom City of India'.",
+    "description": "Solan is a modern gateway to the hills, blending growing industrial centers with colonial-era cantonments and lush horticulture.",
+    "history": "Formed in 1972, Solan district was created by merging the princely states of Baghat, Nalagarh, and several others. Solan town was the capital of the Baghat Princely State. The British established a major cantonment area here in the 19th century, leading to its development as an educational and industrial hub. It is home to Asian's oldest brewery, Mohan Meakin, established in 1855. Its strategic position on the Kalka-Shimla highway and the 1902 railway route transformed it into a vital commerce center.",
+    "culture": "Known as the 'Mushroom City of India' and the 'City of Red Gold' for its massive tomato production. The 'Shoolini Mela' in June is the primary cultural event, dedicated to the presiding goddess Shoolini Devi. Solan's culture is a dynamic mix of industrial progress and preserved colonial charm, as seen in the nearby town of Kasauli. The people are known for their progressive outlook and emphasis on education.",
+    "stats": {
+        "area": "1,936 sq km",
+        "population": "580,320",
+        "altitude": "1,600m",
+        "bestTime": "Year-round"
+    },
+    "topSpots": [
+        {
+            "name": "Kasauli",
+            "description": "A peaceful colonial-era cantonment town with cobbled paths, Victorian villas, and serene forests."
+        },
+        {
+            "name": "Chail",
+            "description": "Home to the world's highest cricket ground and a grand palace built by the Maharaja of Patiala."
+        },
+        {
+            "name": "Shoolini Temple",
+            "description": "An ancient temple dedicated to Bhagwati Shoolini, the namesake and protector of Solan city."
+        },
+        {
+            "name": "Jatoli Shiv Temple",
+            "description": "One of the tallest Shiva temples in Asia, renowned for its intricate Dravidian architecture."
+        }
+    ]
+}

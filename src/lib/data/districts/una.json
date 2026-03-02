@@ -1,0 +1,34 @@
+{
+    "id": "una",
+    "name": "Una",
+    "headquarters": "Una",
+    "image": "/images/una.png",
+    "shortFact": "The industrious gateway to spiritual shrines.",
+    "description": "Una is a land of pilgrimage and agrarian industriousness situated in the fertile Shivalik foothills.",
+    "history": "Una was historically part of the ancient Katoch kingdom of Kangra. The Jaswan State, the first offshoot of Kangra, was founded in 1170 A.D. by Raja Purab Chand with its capital at Rajpura. It eventually came under Mughal and then Sikh rule before being annexed by Maharaja Ranjit Singh in 1815. Before 1966, Una was a tehsil of the Hoshiarpur district in Punjab. It is also the ancestral home of the Bedis, the direct descendants of Guru Nanak Dev, the founder of Sikhism.",
+    "culture": "Una is a major site for spiritual tourism, centered around the Chintpurni Shakti Peeth—where the forehead of Goddess Sati is believed to have fallen. The culture is a unique synthesis of Punjabi agrarian energy and Himachali hill traditions. Fairs like Pir Nigaha and the annual Chintpurni Mela attract millions. The people are known for their hospitality and deep-rooted devotion to both Hindu and Sikh traditions.",
+    "stats": {
+        "area": "1,540 sq km",
+        "population": "521,173",
+        "altitude": "369m",
+        "bestTime": "October to March"
+    },
+    "topSpots": [
+        {
+            "name": "Chintpurni Temple",
+            "description": "One of the 51 Shakti Peethas in India, a major pilgrimage destination for devotees from across the country."
+        },
+        {
+            "name": "Bhakra Dam",
+            "description": "A monumental high gravity dam on the Sutlej river, once the highest of its kind in the world."
+        },
+        {
+            "name": "Una Fort",
+            "description": "The historical fort and home of the Bedi family, descendants of Guru Nanak Dev."
+        },
+        {
+            "name": "Gobind Sagar Lake",
+            "description": "The massive backwaters of the Bhakra Dam, named after Guru Gobind Singh."
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "id": "hamirpur",
+    "name": "Hamirpur",
+    "headquarters": "Hamirpur",
+    "image": "/images/hamirpur.png",
+    "shortFact": "The progressive 'Veer Bhoomi'.",
+    "description": "Hamirpur is a hub of education and martial tradition, characterized by its rolling hills and high literacy rates.",
+    "history": "Hamirpur's history is deeply linked to the Katoch dynasty, rulers of the ancient Jullundur-Trigarta empire. It is named after Raja Hamir Chand, who built a fort here around 1700 A.D. Another great ruler, Raja Sansar Chand, made Sujanpur Tihra his capital and built grand palaces and temples. The region was later annexed by Maharaja Ranjit Singh and then by the British in 1846. It was carved out as a separate district in 1972, consistently leading the state in education and per-capita army enrollment.",
+    "culture": "Known as 'Veer Bhoomi' due to every household's connection to the Indian Armed Forces. The shrine of Baba Balak Nath at Deotsidh is the most visited site, where devotees offer rotis at a cave temple. The culture is a mix of martial pride and agrarian life. Festivals like the 'Hamir Utsav' celebrate local folk arts, and the town of Sujanpur is famous for its massive public 'Chaugan' esplanade.",
+    "stats": {
+        "area": "1,118 sq km",
+        "population": "454,768",
+        "altitude": "785m",
+        "bestTime": "October to April"
+    },
+    "topSpots": [
+        {
+            "name": "Baba Balak Nath Temple",
+            "description": "A highly sacred cave shrine at Deotsidh, visited by millions of devotees every year."
+        },
+        {
+            "name": "Sujanpur Tira Fort",
+            "description": "A historical fort built by the Katoch kings, overlooking a massive public ground and various temples."
+        },
+        {
+            "name": "Nadaun",
+            "description": "A quaint town on the banks of the Beas, once a strategic capital of the Katoch kings."
+        },
+        {
+            "name": "Gasota Mahadev",
+            "description": "An ancient Shiva temple known for its natural serenity and a popular spot during the 'Maha Shivratri'."
+        }
+    ]
+}
