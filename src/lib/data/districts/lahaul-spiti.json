@@ -2,6 +2,8 @@
     "id": "lahaul-spiti",
     "name": "Lahaul & Spiti",
     "headquarters": "Keylong",
+    "latitude": 32.500,
+    "longitude": 77.600,
     "image": "/images/spiti.png",
     "shortFact": "A trans-Himalayan cold desert frontier.",
     "description": "Lahaul & Spiti offers a rugged, high-altitude journey into a land of ancient monasteries and desolate canyons.",
@@ -15,20 +17,42 @@
     },
     "topSpots": [
         {
-            "name": "Ki Monastery",
-            "description": "An iconic fortress-like Tibetan Buddhist monastery perched on a hilltop at 4,166 meters."
+            "name": "Key Monastery",
+            "description": "The largest and oldest Tibetan Buddhist monastery in Spiti Valley, perched atop a hill.",
+            "x": 48,
+            "y": 42
         },
         {
             "name": "Chandratal Lake",
-            "description": "The 'Moon Lake'—a turquoise blue crescent-shaped lake located at 4,300 meters."
+            "description": "The 'Moon Lake', a high-altitude spectacle that changes colors from turquoise to emerald.",
+            "x": 25,
+            "y": 15
         },
         {
-            "name": "Tabo Monastery",
-            "description": "The 'Ajanta of the Himalayas', housing centuries-old murals and stucco statues."
+            "name": "Hikkim Village",
+            "description": "Home to the world's highest post office, offering a glimpse into high-altitude monastic life.",
+            "x": 42,
+            "y": 52
         },
         {
             "name": "Kunzum Pass",
-            "description": "The 4,590-meter high pass that serves as the gateway from Lahaul to Spiti."
+            "description": "A high mountain pass that connects Kullu and Lahaul to the Spiti Valley.",
+            "x": 35,
+            "y": 28
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Spiti Thukpa",
+        "description": "A comforting high-altitude noodle soup with mountain herbs and hand-pulled dough.",
+        "history": "Thukpa has been the primary sustenance for the trans-Himalayan communities of Spiti for generations.",
+        "image": "/images/spiti_thukpa.png",
+        "tip": "Best enjoyed with a side of spicy red chili chutney in the cold Spiti winters."
+    },
+    "wildlife": {
+        "name": "Snow Leopard",
+        "scientificName": "Panthera uncia",
+        "status": "Vulnerable",
+        "description": "The 'Ghost of the Mountains', which can be spotted in the Kibber Wildlife Sanctuary during the winter months.",
+        "image": "/images/nature_snow_leopard.png"
+    }
 }

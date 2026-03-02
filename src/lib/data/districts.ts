@@ -14,6 +14,8 @@ import hamirpur from "./districts/hamirpur.json";
 export interface TopSpot {
     name: string;
     description: string;
+    x: number; // Percentage for Meta-Map
+    y: number; // Percentage for Meta-Map
 }
 
 export interface District {
@@ -31,7 +33,29 @@ export interface District {
         altitude?: string;
         bestTime?: string;
     };
+    latitude: number;
+    longitude: number;
     topSpots: TopSpot[];
+    cuisine?: {
+        name: string;
+        description: string;
+        history: string;
+        image: string;
+        tip: string;
+    };
+    wildlife?: {
+        name: string;
+        scientificName: string;
+        status: string;
+        description: string;
+        image: string;
+    };
+    flora?: {
+        name: string;
+        scientificName: string;
+        description: string;
+        image: string;
+    };
 }
 
 export const districtsData: District[] = [

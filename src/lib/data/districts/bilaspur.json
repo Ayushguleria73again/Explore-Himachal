@@ -2,6 +2,8 @@
     "id": "bilaspur",
     "name": "Bilaspur",
     "headquarters": "Bilaspur",
+    "latitude": 31.330270,
+    "longitude": 76.756630,
     "image": "/images/bilaspur.png",
     "shortFact": "The first planned hill town around a vast lake.",
     "description": "Bilaspur is a unique township situated around the man-made Gobind Sagar lake, offering water sports and spiritual vistas.",
@@ -16,19 +18,41 @@
     "topSpots": [
         {
             "name": "Naina Devi Temple",
-            "description": "A highly revered Shakti Peeth situated on a hilltop, accessible by a scenic ropeway ride."
+            "description": "A highly revered Shakti Peeth situated on a hilltop, accessible by a scenic ropeway ride.",
+            "x": 65,
+            "y": 82
         },
         {
             "name": "Gobind Sagar Lake",
-            "description": "A massive man-made reservoir offering paragliding, boating, and water sports activities."
+            "description": "A massive man-made reservoir offering paragliding, boating, and water sports activities.",
+            "x": 48,
+            "y": 62
         },
         {
             "name": "Kandror Bridge",
-            "description": "A historic road bridge over the lake, once considered the second-highest bridge in the world."
+            "description": "A historic road bridge over the lake, once considered the second-highest bridge in the world.",
+            "x": 55,
+            "y": 58
         },
         {
             "name": "Vyas Cave",
-            "description": "A cave where Rishi Ved Vyas is said to have stayed and meditated during his journey."
+            "description": "A cave where Rishi Ved Vyas is said to have stayed and meditated during his journey.",
+            "x": 45,
+            "y": 55
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Gobind Sagar Fish & Kahluri Flavors",
+        "description": "Freshwater fish from the massive reservoir, prepared with local spices from the ancient Kahlur region.",
+        "history": "The creation of the Gobind Sagar lake transformed the local economy and cuisine, making freshwater fish a central part of the Bilaspur table.",
+        "image": "/images/culture_madra.png",
+        "tip": "The local fried fish served near the lake-side stalls is a must-try for non-vegetarians."
+    },
+    "wildlife": {
+        "name": "Rhesus Macaque",
+        "scientificName": "Macaca mulatta",
+        "status": "Least Concern",
+        "description": "Playful and intelligent primates commonly seen around the temples and lakeside paths of Bilaspur.",
+        "image": "/images/nature_monal.png"
+    }
 }

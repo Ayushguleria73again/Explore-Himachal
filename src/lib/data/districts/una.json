@@ -2,6 +2,8 @@
     "id": "una",
     "name": "Una",
     "headquarters": "Una",
+    "latitude": 31.464930,
+    "longitude": 76.269140,
     "image": "/images/una.png",
     "shortFact": "The industrious gateway to spiritual shrines.",
     "description": "Una is a land of pilgrimage and agrarian industriousness situated in the fertile Shivalik foothills.",
@@ -16,19 +18,41 @@
     "topSpots": [
         {
             "name": "Chintpurni Temple",
-            "description": "One of the 51 Shakti Peethas in India, a major pilgrimage destination for devotees from across the country."
+            "description": "One of the 51 Shakti Peethas in India, a major pilgrimage destination for devotees from across the country.",
+            "x": 42,
+            "y": 35
         },
         {
             "name": "Bhakra Dam",
-            "description": "A monumental high gravity dam on the Sutlej river, once the highest of its kind in the world."
+            "description": "A monumental high gravity dam on the Sutlej river, once the highest of its kind in the world.",
+            "x": 65,
+            "y": 68
         },
         {
             "name": "Una Fort",
-            "description": "The historical fort and home of the Bedi family, descendants of Guru Nanak Dev."
+            "description": "The historical fort and home of the Bedi family, descendants of Guru Nanak Dev.",
+            "x": 48,
+            "y": 52
         },
         {
             "name": "Gobind Sagar Lake",
-            "description": "The massive backwaters of the Bhakra Dam, named after Guru Gobind Singh."
+            "description": "The massive backwaters of the Bhakra Dam, named after Guru Gobind Singh.",
+            "x": 58,
+            "y": 72
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Chintpurni Prasad & Punjabi Flavors",
+        "description": "A mix of traditional temple prasad and the hearty, robust flavors of Punjabi agrarian life.",
+        "history": "Una's location on the border of Punjab has created a rich culinary exchange, blending local hill pulses with Punjabi breads.",
+        "image": "/images/culture_madra.png",
+        "tip": "Don't miss the langar (community meal) served at the major shrines in the district."
+    },
+    "wildlife": {
+        "name": "Indian Leopard",
+        "scientificName": "Panthera pardus fusca",
+        "status": "Vulnerable",
+        "description": "A versatile predator that roams the hilly terrain of the Shivalik foothills in Una.",
+        "image": "/images/nature_monal.png"
+    }
 }

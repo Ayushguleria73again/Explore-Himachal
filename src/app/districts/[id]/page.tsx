@@ -5,6 +5,9 @@ import { MapPin, History, Camera, Info } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MetaItem } from "@/components/ui/meta-item";
+import { WeatherWidget } from "@/components/ui/weather-widget";
+import { CuisineSpotlight } from "@/components/ui/cuisine-spotlight";
+import { NatureArchive } from "@/components/ui/nature-archive";
 
 export async function generateStaticParams() {
   const params = districtsData.map((district) => ({
@@ -43,6 +46,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ id: s
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
           {/* Left Column - Meta */}
           <div className="space-y-12">
+            <WeatherWidget lat={district.latitude} lon={district.longitude} name={district.name} />
             <div>
               <h2 className="text-[10px] uppercase tracking-[0.4em] text-emerald-500 font-black mb-8">Vital Stats</h2>
               <div className="space-y-6">
@@ -120,6 +124,17 @@ export default async function DistrictPage({ params }: { params: Promise<{ id: s
                </div>
             </section>
           </div>
+        </div>
+
+        {/* Phase 4 Deep Dive Sections */}
+        <div className="mt-32 space-y-32">
+          {district.cuisine && (
+            <CuisineSpotlight cuisine={district.cuisine} />
+          )}
+
+          {(district.wildlife || district.flora) && (
+            <NatureArchive wildlife={district.wildlife} flora={district.flora} />
+          )}
         </div>
       </div>
       <Footer />

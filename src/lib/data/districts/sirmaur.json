@@ -2,6 +2,8 @@
     "id": "sirmaur",
     "name": "Sirmaur",
     "headquarters": "Nahan",
+    "latitude": 30.5599327,
+    "longitude": 77.2954829,
     "image": "/images/sirmaur.png",
     "shortFact": "The crown of the Shivalik foothills.",
     "description": "Sirmaur is characterized by its agricultural richness, historical princely legacy, and the sacred Renuka Lake.",
@@ -16,19 +18,41 @@
     "topSpots": [
         {
             "name": "Renuka Lake",
-            "description": "The largest natural lake in the state, believed to be the embodiment of Goddess Renuka."
+            "description": "The largest natural lake in the state, believed to be the embodiment of Goddess Renuka.",
+            "x": 48,
+            "y": 62
         },
         {
             "name": "Paonta Sahib",
-            "description": "A historic Sikh shrine where Guru Gobind Singh lived and composed several holy scriptures."
+            "description": "A historic Sikh shrine where Guru Gobind Singh lived and composed several holy scriptures.",
+            "x": 65,
+            "y": 85
         },
         {
             "name": "Nahan",
-            "description": "A beautifully planned hill city with grand palaces, historical gardens, and colonial streets."
+            "description": "A beautifully planned hill city with grand palaces, historical gardens, and colonial streets.",
+            "x": 42,
+            "y": 68
         },
         {
             "name": "Churdhar Peak",
-            "description": "The highest peak in the Shivalik range, offering panoramic views of the Sutlej and Yamuna rivers."
+            "description": "The highest peak in the Shivalik range, offering panoramic views of the Sutlej and Yamuna rivers.",
+            "x": 58,
+            "y": 42
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Sirmauri Ginger & Garlic",
+        "description": "Bold, aromatic spices cultivated in the fertile Giripar mountains, used in local slow-cooked meats.",
+        "history": "Sirmaur is the largest ginger-producing district in the state, with traditional farming methods passed down for generations.",
+        "image": "/images/culture_madra.png",
+        "tip": "Look for the locally made ginger candy and sundried garlic strings in Nahan markets."
+    },
+    "wildlife": {
+        "name": "Himalayan Goral",
+        "scientificName": "Naemorhedus goral",
+        "status": "Near Threatened",
+        "description": "A nimble, goat-like antelope that thrives in the steep rocky slopes of the Renuka Wildlife Sanctuary.",
+        "image": "/images/nature_ibex.png"
+    }
 }

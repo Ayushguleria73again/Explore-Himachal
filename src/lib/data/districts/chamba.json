@@ -2,6 +2,8 @@
     "id": "chamba",
     "name": "Chamba",
     "headquarters": "Chamba",
+    "latitude": 32.571470,
+    "longitude": 76.102290,
     "image": "/images/chamba.png",
     "shortFact": "A reservoir of ancient stone architecture.",
     "description": "Chamba is an untouched paradise that has preserved its artistic heritage and medieval temples for over a thousand years.",
@@ -15,20 +17,42 @@
     },
     "topSpots": [
         {
-            "name": "Khajjiar",
-            "description": "The 'Mini Switzerland of India', featuring a floating island in the center of a lush meadow."
+            "name": "Khajjiar Lake",
+            "description": "Commonly known as the 'Mini Switzerland of India', featuring a floating island and cedar forests.",
+            "x": 42,
+            "y": 58
         },
         {
-            "name": "Laxmi Narayan Temple",
-            "description": "A 10th-century complex dedicated to Lord Vishnu and Shiva, featuring exquisite shikhara architecture."
+            "name": "Choughan Ground",
+            "description": "The social and cultural heart of Chamba, where the Minjar Mela is celebrated annually.",
+            "x": 45,
+            "y": 62
         },
         {
-            "name": "Chaugan",
-            "description": "The massive public esplanade in Chamba town, the center of all social and cultural festivals."
+            "name": "Lakshmi Narayan Temple",
+            "description": "A 10th-century temple complex built by Sahil Varman, showcasing Shikhara style architecture.",
+            "x": 48,
+            "y": 65
         },
         {
-            "name": "Manimahesh Lake",
-            "description": "A sacred lake situated at 4,080 meters, home to the annual Manimahesh Yatra."
+            "name": "Mani Mahesh Lake",
+            "description": "A high-altitude pilgrimage site located at the foot of the sacred Mani Mahesh Kailash peak.",
+            "x": 75,
+            "y": 45
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Chamba Madra",
+        "description": "Slow-cooked Rajma (kidney beans) in a rich yogurt and local spice gravy.",
+        "history": "Madra is the soul of Chamba's culinary identity, dating back to the princely era of the Chamba state.",
+        "image": "/images/chamba_madra.png",
+        "tip": "Best paired with steamed Basmati rice and a side of Khatta (tangy pumpkin dish)."
+    },
+    "wildlife": {
+        "name": "Himalayan Ibex",
+        "scientificName": "Capra sibirica",
+        "status": "Least Concern",
+        "description": "A sturdy mountain goat known for its large curved horns, found in the high cliffs of the Pangi valley.",
+        "image": "/images/nature_ibex.png"
+    }
 }

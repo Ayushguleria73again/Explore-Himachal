@@ -4,24 +4,22 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+  --background-rgb: 255, 255, 255;
+  --accent-emerald: 16, 185, 129;
+}
 
-  --accent-primary: #059669;
-  /* Emerald Green */
-  --accent-secondary: #0284c7;
-  /* Sky Blue */
-  --accent-vibrant: #f59e0b;
-  /* Amber/Orange */
-  --accent-deep: #1e3a8a;
-  /* Deep Indigo */
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 2, 6, 23;
+  --accent-emerald: 52, 211, 153;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #ffffff;
+  background: rgb(var(--background-rgb));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @layer utilities {

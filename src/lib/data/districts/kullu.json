@@ -2,6 +2,8 @@
     "id": "kullu",
     "name": "Kullu",
     "headquarters": "Kullu",
+    "latitude": 31.957851,
+    "longitude": 77.1094597,
     "image": "/images/kullu.png",
     "shortFact": "The mystical 'Valley of Gods'.",
     "description": "Kullu is an enchanting valley framed by the Beas River, famous for its vibrant festivals and hand-woven artistry.",
@@ -16,19 +18,41 @@
     "topSpots": [
         {
             "name": "Rohtang Pass",
-            "description": "A high-altitude gateway to Lahaul and Spiti, offering snow even in peak summer."
+            "description": "A high mountain pass on the eastern Pir Panjal Range, connecting Kullu with Lahaul and Spiti.",
+            "x": 65,
+            "y": 15
         },
         {
-            "name": "Manali",
-            "description": "A global tourism hotspot named after the sage Manu, who is said to have recreated human life here."
+            "name": "Solang Valley",
+            "description": "Known as the Adventure Valley, offering paragliding, zorbing, and skiing with breathtaking glacier views.",
+            "x": 58,
+            "y": 28
         },
         {
-            "name": "Naggar Castle",
-            "description": "A 15th-century palace built of earthquake-resistant wood and stone, overlooking the valley."
+            "name": "Old Manali",
+            "description": "Charming colonial-style cafes, local markets, and the ancient Hadimba Devi Temple.",
+            "x": 55,
+            "y": 35
         },
         {
-            "name": "Great Himalayan National Park",
-            "description": "A UNESCO World Heritage site and a sanctuary for rare Himalayan flora and fauna."
+            "name": "Kasol & Parvati Valley",
+            "description": "A haven for backpackers, famous for its trekking trails and vibrant river-side culture.",
+            "x": 72,
+            "y": 58
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Siddu",
+        "description": "A steamed bun made from wheat flour, stuffed with poppy seeds, walnuts, and spices.",
+        "history": "Siddu is a winter staple in Kullu, providing warmth and energy during the harsh Himalayan winters.",
+        "image": "/images/culture_siddu.png",
+        "tip": "Always serve with a generous dollop of pure Desi Ghee (clarified butter)."
+    },
+    "wildlife": {
+        "name": "Himalayan Brown Bear",
+        "scientificName": "Ursus arctos isabellinus",
+        "status": "Critically Endangered",
+        "description": "One of the rarest bears in the world, found only in the high altitude meadows of the Great Himalayan National Park.",
+        "image": "/images/nature_brown_bear.png"
+    }
 }

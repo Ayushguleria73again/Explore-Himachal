@@ -2,6 +2,8 @@
     "id": "mandi",
     "name": "Mandi",
     "headquarters": "Mandi",
+    "latitude": 31.71079,
+    "longitude": 76.93152,
     "image": "/images/mandi.png",
     "shortFact": "The vibrant 'Varanasi of the Hills'.",
     "description": "Mandi is a historic commercial and spiritual hub on the banks of the Beas, famous for its ancient stone temples and artistic heritage.",
@@ -15,20 +17,42 @@
     },
     "topSpots": [
         {
-            "name": "Rewalsar Lake",
-            "description": "A sacred 'trinity' lake for Hindus, Buddhists, and Sikhs, home to huge floating reed islands."
-        },
-        {
             "name": "Prashar Lake",
-            "description": "A high-altitude lake with a mysterious floating island and a 14th-century pagoda temple."
+            "description": "A high-altitude lake with a floating island and a 14th-century temple dedicated to Sage Prashar.",
+            "x": 62,
+            "y": 35
         },
         {
-            "name": "Bhootnath Temple",
-            "description": "An ancient stone temple of Lord Shiva that forms the spiritual heart of Mandi town."
+            "name": "Rewalsar Lake",
+            "description": "A sacred lake for Hindus, Buddhists, and Sikhs, known for its floating islands of reed and fish.",
+            "x": 55,
+            "y": 48
         },
         {
-            "name": "Pandoh Dam",
-            "description": "An embankment dam on the Beas river, diverting water for hydroelectric power."
+            "name": "Panchvaktra Temple",
+            "description": "An ancient temple dedicated to Lord Shiva, located at the confluence of the Beas and Suketi rivers.",
+            "x": 48,
+            "y": 52
+        },
+        {
+            "name": "Janjehli Valley",
+            "description": "A trekker's paradise known for its pristine beauty and traditional wooden architecture.",
+            "x": 72,
+            "y": 68
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Sepu Badi",
+        "description": "Steamed spinach and lentil dumplings slow-cooked in a tangy yogurt-based gravy.",
+        "history": "Sepu Badi is the pinnacle of Mandyali cuisine, traditionally served as the main course in the royal Dham.",
+        "image": "/images/mandi_sepu_badi.png",
+        "tip": "Best enjoyed with a warm bowl of ghee-laden rice during the International Mandi Shivratri mela."
+    },
+    "wildlife": {
+        "name": "Himalayan Monal",
+        "scientificName": "Lophophorus impejanus",
+        "status": "State Bird",
+        "description": "A magnificent bird found in the dense oak and deodar forests of the Janjehli valley.",
+        "image": "/images/nature_monal.png"
+    }
 }

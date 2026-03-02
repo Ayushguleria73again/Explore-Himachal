@@ -8,6 +8,10 @@ import { Footer } from "@/components/layout/Footer";
 import { FactBlock } from "@/components/ui/fact-block";
 import { DistrictCard } from "@/components/ui/district-card";
 import { CultureItem } from "@/components/ui/culture-item";
+import { InteractiveMap } from "@/components/ui/InteractiveMap";
+import { FestivalCalendar } from "@/components/ui/festival-calendar";
+import { ItineraryPlanner } from "@/components/ui/itinerary-planner";
+import { CommunityGallery } from "@/components/ui/community-gallery";
 
 export default function Home() {
   return (
@@ -52,6 +56,11 @@ export default function Home() {
         <p className="text-2xl md:text-4xl font-bold leading-[1.15] text-gray-900 tracking-tight">
           Himachal is not just a state; it is a <span className="text-emerald-600 italic font-serif">silence</span> captured in mountains. From sub-tropical valleys to cold desert plateaus.
         </p>
+      </section>
+
+      {/* Interactive Map */}
+      <section className="bg-white border-t border-gray-100 pb-20 overflow-hidden">
+        <InteractiveMap />
       </section>
 
       {/* Districts Grid */}
@@ -133,6 +142,21 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Festival Calendar */}
+      <section className="bg-white dark:bg-slate-950 border-t border-gray-100 dark:border-slate-900">
+        <FestivalCalendar />
+      </section>
+
+      {/* Itinerary Planner */}
+      <section className="bg-gray-50/50 dark:bg-slate-950/50 border-t border-gray-100 dark:border-slate-900">
+        <ItineraryPlanner />
+      </section>
+
+      {/* Community Gallery */}
+      <section className="bg-white dark:bg-slate-950 border-t border-gray-100 dark:border-slate-900">
+        <CommunityGallery />
       </section>
 
       <Footer key="vibrant-footer-v2" />

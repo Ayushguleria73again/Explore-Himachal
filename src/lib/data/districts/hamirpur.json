@@ -2,6 +2,8 @@
     "id": "hamirpur",
     "name": "Hamirpur",
     "headquarters": "Hamirpur",
+    "latitude": 31.690783,
+    "longitude": 76.517715,
     "image": "/images/hamirpur.png",
     "shortFact": "The progressive 'Veer Bhoomi'.",
     "description": "Hamirpur is a hub of education and martial tradition, characterized by its rolling hills and high literacy rates.",
@@ -16,19 +18,41 @@
     "topSpots": [
         {
             "name": "Baba Balak Nath Temple",
-            "description": "A highly sacred cave shrine at Deotsidh, visited by millions of devotees every year."
+            "description": "A highly sacred cave shrine at Deotsidh, visited by millions of devotees every year.",
+            "x": 35,
+            "y": 72
         },
         {
             "name": "Sujanpur Tira Fort",
-            "description": "A historical fort built by the Katoch kings, overlooking a massive public ground and various temples."
+            "description": "A historical fort built by the Katoch kings, overlooking a massive public ground and various temples.",
+            "x": 65,
+            "y": 35
         },
         {
             "name": "Nadaun",
-            "description": "A quaint town on the banks of the Beas, once a strategic capital of the Katoch kings."
+            "description": "A quaint town on the banks of the Beas, once a strategic capital of the Katoch kings.",
+            "x": 42,
+            "y": 48
         },
         {
             "name": "Gasota Mahadev",
-            "description": "An ancient Shiva temple known for its natural serenity and a popular spot during the 'Maha Shivratri'."
+            "description": "An ancient Shiva temple known for its natural serenity and a popular spot during the 'Maha Shivratri'.",
+            "x": 52,
+            "y": 55
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Sujanpuri Rot & Katara Food",
+        "description": "A unique mix of sacred temple offerings (Rot) and the robust, simple meals of the Katoch warriors.",
+        "history": "Hamirpur's culinary history is tied to the Sujanpur Tira court, where grand feasts were hosted by the Katoch kings.",
+        "image": "/images/culture_madra.png",
+        "tip": "The 'Baba Balak Nath Rot' is a sacred whole-wheat offering that is famous across northern India."
+    },
+    "wildlife": {
+        "name": "Barking Deer",
+        "scientificName": "Muntiacus muntjak",
+        "status": "Least Concern",
+        "description": "A common sight in the pine-covered hills of Hamirpur, known for its vocalizations that resemble a bark.",
+        "image": "/images/nature_ibex.png"
+    }
 }

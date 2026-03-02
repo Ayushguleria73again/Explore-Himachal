@@ -2,6 +2,8 @@
     "id": "kinnaur",
     "name": "Kinnaur",
     "headquarters": "Reckong Peo",
+    "latitude": 31.540278,
+    "longitude": 78.272222,
     "image": "/images/kinnaur.png",
     "shortFact": "The enchanting 'Land of Fairy Tales'.",
     "description": "Kinnaur is a land of sheer cliffs, lush valleys, and high-altitude orchards where Hinduism and Buddhism meet.",
@@ -16,19 +18,41 @@
     "topSpots": [
         {
             "name": "Sangla Valley",
-            "description": "Regarded as one of the most scenic valleys in the world, famous for its saffron and apple orchards."
+            "description": "Regarded as one of the most scenic valleys in the world, famous for its saffron and apple orchards.",
+            "x": 45,
+            "y": 65
         },
         {
             "name": "Kalpa",
-            "description": "A heritage village offering the best sunrise views of the sacred Kinner Kailash massif."
+            "description": "A heritage village offering the best sunrise views of the sacred Kinner Kailash massif.",
+            "x": 38,
+            "y": 42
         },
         {
             "name": "Chitkul",
-            "description": "The last inhabited village on the Indo-Tibetan border, known for its pristine beauty."
+            "description": "The last inhabited village on the Indo-Tibetan border, known for its pristine beauty.",
+            "x": 65,
+            "y": 72
         },
         {
             "name": "Nako Lake",
-            "description": "A sacred lake situated in the high-altitude cold desert, surrounded by an ancient stone village."
+            "description": "A sacred lake situated in the high-altitude cold desert, surrounded by an ancient stone village.",
+            "x": 82,
+            "y": 25
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Kinnauri Apples & Chilgoza",
+        "description": "Crisp, sun-kissed apples and rare pine nuts (Chilgoza) harvested from high-altitude forests.",
+        "history": "Kinnaur is world-famous for its high-quality temperate fruits, which were introduced during the late 19th century.",
+        "image": "/images/culture_siddu.png",
+        "tip": "Try the freshly pressed apple juice and sun-dried apricots from the Sangla farmers' cooperative."
+    },
+    "wildlife": {
+        "name": "Himalayan Blue Sheep",
+        "scientificName": "Pseudois nayaur",
+        "status": "Least Concern",
+        "description": "Commonly known as Bharal, these mountain sheep are often spotted on the cliffs of the Kalpa region.",
+        "image": "/images/nature_ibex.png"
+    }
 }

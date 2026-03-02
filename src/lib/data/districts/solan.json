@@ -2,6 +2,8 @@
     "id": "solan",
     "name": "Solan",
     "headquarters": "Solan",
+    "latitude": 31.10657,
+    "longitude": 77.10171,
     "image": "/images/solan.png",
     "shortFact": "The sprawling 'Mushroom City of India'.",
     "description": "Solan is a modern gateway to the hills, blending growing industrial centers with colonial-era cantonments and lush horticulture.",
@@ -16,19 +18,41 @@
     "topSpots": [
         {
             "name": "Kasauli",
-            "description": "A peaceful colonial-era cantonment town with cobbled paths, Victorian villas, and serene forests."
+            "description": "A peaceful colonial-era cantonment town with cobbled paths, Victorian villas, and serene forests.",
+            "x": 48,
+            "y": 72
         },
         {
             "name": "Chail",
-            "description": "Home to the world's highest cricket ground and a grand palace built by the Maharaja of Patiala."
+            "description": "Home to the world's highest cricket ground and a grand palace built by the Maharaja of Patiala.",
+            "x": 65,
+            "y": 55
         },
         {
             "name": "Shoolini Temple",
-            "description": "An ancient temple dedicated to Bhagwati Shoolini, the namesake and protector of Solan city."
+            "description": "An ancient temple dedicated to Bhagwati Shoolini, the namesake and protector of Solan city.",
+            "x": 45,
+            "y": 62
         },
         {
             "name": "Jatoli Shiv Temple",
-            "description": "One of the tallest Shiva temples in Asia, renowned for its intricate Dravidian architecture."
+            "description": "One of the tallest Shiva temples in Asia, renowned for its intricate Dravidian architecture.",
+            "x": 42,
+            "y": 58
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Mushroom & Tomato Spotlight",
+        "description": "Solan is the 'Mushroom City of India', producing high-quality button mushrooms and 'Red Gold' tomatoes.",
+        "history": "Horticultural excellence began in the mid-20th century, transforming Solan into a vital producer of organic vegetables for north India.",
+        "image": "/images/culture_siddu.png",
+        "tip": "Visit the DMR (Directorate of Mushroom Research) to see unique cultivation techniques."
+    },
+    "wildlife": {
+        "name": "Barking Deer",
+        "scientificName": "Muntiacus muntjak",
+        "status": "Least Concern",
+        "description": "A small, shy deer known for its distinctive bark, often seen in the forests surrounding Chail.",
+        "image": "/images/nature_ibex.png"
+    }
 }

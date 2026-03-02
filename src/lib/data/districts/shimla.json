@@ -2,6 +2,8 @@
     "id": "shimla",
     "name": "Shimla",
     "headquarters": "Shimla",
+    "latitude": 31.104605,
+    "longitude": 77.173424,
     "image": "/images/shimla.png",
     "shortFact": "The legendary 'Queen of Hills'.",
     "description": "Shimla is a historic blend of colonial Neo-Gothic architecture and quintessential Himachali hospitality perched on the Shivalik ridges.",
@@ -15,20 +17,42 @@
     },
     "topSpots": [
         {
-            "name": "Viceregal Lodge",
-            "description": "The former residence of the British Viceroy, an architectural masterpiece of Jacobethan style."
-        },
-        {
             "name": "The Ridge & Mall Road",
-            "description": "The cultural hub of Shimla, offering panoramic views of the snow-clad mountains."
+            "description": "The open space in the heart of the city, offering spectacular views of the mountain ranges.",
+            "x": 52,
+            "y": 48
         },
         {
-            "name": "Jakhoo Temple",
-            "description": "A sacred shrine dedicated to Lord Hanuman, situated at the city's highest point."
+            "name": "Jakhu Temple",
+            "description": "Ancient temple dedicated to Lord Hanuman, situated on the Jakhu Hill, the highest peak in Shimla.",
+            "x": 55,
+            "y": 42
         },
         {
-            "name": "Tattapani",
-            "description": "Famous for its natural hot sulfur springs and river rafting on the Sutlej."
+            "name": "Kufri",
+            "description": "A small hill station known for its trekking and hiking trails, and beautiful scenery.",
+            "x": 65,
+            "y": 55
+        },
+        {
+            "name": "Viceregal Lodge",
+            "description": "Formerly the residence of the British Viceroy of India, now a premier research institute.",
+            "x": 38,
+            "y": 52
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Red Rice & Sidu",
+        "description": "A combination of nutrient-rich Himalayan red rice and steamed walnut-stuffed buns.",
+        "history": "Red rice has been harvested in the Shimla hills for centuries, prized for its earthy flavor and medicinal properties.",
+        "image": "/images/culture_siddu.png",
+        "tip": "Enjoy it with fresh apricot chutney found in the upper Shimla regions."
+    },
+    "wildlife": {
+        "name": "Cheer Pheasant",
+        "scientificName": "Catreus wallichii",
+        "status": "Vulnerable",
+        "description": "A shy, long-tailed pheasant found in the steep grassy hills of the Shimla wildlife sanctuaries.",
+        "image": "/images/nature_monal.png"
+    }
 }

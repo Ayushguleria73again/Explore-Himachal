@@ -2,6 +2,8 @@
     "id": "kangra",
     "name": "Kangra",
     "headquarters": "Dharamshala",
+    "latitude": 32.219044,
+    "longitude": 76.323402,
     "image": "/images/kangra.png",
     "shortFact": "The ancient seat of the Trigarta kingdom.",
     "description": "Kangra is a land of spiritual peaks and historical depth, home to the mighty Dhauladhar range and the spiritual center of Dharamshala.",
@@ -15,20 +17,36 @@
     },
     "topSpots": [
         {
-            "name": "Kangra Fort",
-            "description": "The oldest surviving fort in the Himalayas, standing on a hillock between the Manjhi and Banganga rivers."
+            "name": "Dharamshala & McLeod Ganj",
+            "description": "The spiritual home of the Dalai Lama, surrounded by cedar forests and prayer flags.",
+            "x": 45,
+            "y": 42
         },
         {
-            "name": "Dharamshala",
-            "description": "The spiritual home of the Dalai Lama and the seat of the Tibetan government-in-exile."
+            "name": "Kangra Fort",
+            "description": "One of the oldest and largest forts in India, offering panoramic views of the valley.",
+            "x": 48,
+            "y": 55
         },
         {
             "name": "Masroor Rock Cut Temple",
-            "description": "The 'Ellora of the Hills'—eighth-century monolithic temples carved out of a single piece of sandstone."
-        },
-        {
-            "name": "Bir Billing",
-            "description": "Recognized globally as one of the best paragliding sites in the world."
+            "description": "The 'Ellora of the Himalayas', a complex of 15 monolithic rock-cut temples.",
+            "x": 35,
+            "y": 62
         }
-    ]
+    ],
+    "cuisine": {
+        "name": "Kangri Dham",
+        "description": "A traditional multi-course meal served on leaf plates, featuring slow-cooked pulses and madra.",
+        "history": "Dham was originally a ritual food prepared by Brahmin cooks (Bolted) for royal celebrations and festivals.",
+        "image": "/images/kangra_dham.png",
+        "tip": "Best experienced during local weddings or temple festivals."
+    },
+    "wildlife": {
+        "name": "Himalayan Monal",
+        "scientificName": "Lophophorus impejanus",
+        "status": "State Bird of HP",
+        "description": "A stunning bird with iridescent metallic plumage seen in the higher reaches of Dharamkot.",
+        "image": "/images/nature_monal.png"
+    }
 }
