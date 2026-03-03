@@ -11,6 +11,20 @@ import una from "./districts/una.json";
 import bilaspur from "./districts/bilaspur.json";
 import hamirpur from "./districts/hamirpur.json";
 
+export interface ItineraryDay {
+    day: number;
+    title: string;
+    activities: string[];
+    description: string;
+}
+
+export interface Itinerary {
+    title: string;
+    duration: string;
+    description: string;
+    days: ItineraryDay[];
+}
+
 export interface TopSpot {
     name: string;
     description: string;
@@ -56,6 +70,28 @@ export interface District {
         description: string;
         image: string;
     };
+    weather?: {
+        temp_summer: string;
+        temp_winter: string;
+        monsoon_impact: string;
+        packing_essentials: string;
+    };
+    activities?: string[];
+    connectivity?: {
+        nearest_airport: string;
+        nearest_railway: string;
+        distance_from_chandigarh: string;
+        distance_from_delhi: string;
+    };
+    festivals?: {
+        name: string;
+        month: string;
+        description?: string;
+    }[];
+    itineraries?: Itinerary[];
+    gallery?: string[];
+    interests?: ("Adventure" | "Peace" | "Heritage")[];
+    vibe?: ("Snowy" | "Tropical" | "High Altitude")[];
 }
 
 export const districtsData: District[] = [

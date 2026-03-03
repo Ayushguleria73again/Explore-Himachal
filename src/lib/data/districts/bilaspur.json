@@ -45,7 +45,7 @@
         "name": "Gobind Sagar Fish & Kahluri Flavors",
         "description": "Freshwater fish from the massive reservoir, prepared with local spices from the ancient Kahlur region.",
         "history": "The creation of the Gobind Sagar lake transformed the local economy and cuisine, making freshwater fish a central part of the Bilaspur table.",
-        "image": "/images/culture_madra.png",
+        "image": "/images/districts/cuisine_bilaspur.png",
         "tip": "The local fried fish served near the lake-side stalls is a must-try for non-vegetarians."
     },
     "wildlife": {
@@ -53,6 +53,67 @@
         "scientificName": "Macaca mulatta",
         "status": "Least Concern",
         "description": "Playful and intelligent primates commonly seen around the temples and lakeside paths of Bilaspur.",
-        "image": "/images/nature_monal.png"
-    }
+        "image": "/images/districts/wildlife_bilaspur.png"
+    },
+    "weather": {
+        "temp_summer": "25°C - 45°C",
+        "temp_winter": "5°C - 20°C",
+        "monsoon_impact": "Substantial rainfall, lake levels rise significantly making for great views but some water activities may pause",
+        "packing_essentials": "Light cottons for summer (can be very hot), light woolens for winter"
+    },
+    "activities": [
+        "Water Sports (Gobind Sagar)",
+        "Paragliding (Bandla Dhar)",
+        "Temple Pilgrimage (Naina Devi)",
+        "Historical Cave Exploration",
+        "Bridge Photography",
+        "Fishing (Swan River)"
+    ],
+    "connectivity": {
+        "nearest_airport": "Chandigarh - 130 km",
+        "nearest_railway": "Kiratpur Sahib - 65 km",
+        "distance_from_chandigarh": "130 km",
+        "distance_from_delhi": "370 km"
+    },
+    "festivals": [
+        {
+            "name": "Nalwari Cattle Fair",
+            "month": "March (17th - 23rd)",
+            "description": "A major state-level fair centering around cattle trade and local wrestling."
+        },
+        {
+            "name": "Gugga Fair",
+            "month": "August/September",
+            "description": "A traditional fair dedicated to the snake deity, Gugga Chauhan."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Resilient Valley",
+            "duration": "1 Day",
+            "description": "Explore the submerged history and modern marvels of Bilaspur.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Lake & Fort Trail",
+                    "activities": [
+                        "Govind Sagar Lake",
+                        "Laxmi Narayan Temple",
+                        "Bhakra Dam View"
+                    ],
+                    "description": "Witness the engineering marvel of Bhakra Dam and the vast Govind Sagar Lake."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Heritage",
+        "Adventure"
+    ],
+    "vibe": [
+        "Tropical"
+    ],
+    "gallery": [
+        "/images/bilaspur.png"
+    ]
 }

@@ -54,5 +54,106 @@
         "status": "Vulnerable",
         "description": "The 'Ghost of the Mountains', which can be spotted in the Kibber Wildlife Sanctuary during the winter months.",
         "image": "/images/nature_snow_leopard.png"
-    }
+    },
+    "weather": {
+        "temp_summer": "5°C - 20°C",
+        "temp_winter": "-30°C - 5°C",
+        "monsoon_impact": "Very low rainfall (Rain shadow zone), but access routes may be affected by rain in other districts",
+        "packing_essentials": "Strict thermals, heavy down jackets, sunblock (strong UV), sturdy hiking boots"
+    },
+    "activities": [
+        "Monastery Tours",
+        "Star Gazing",
+        "High-altitude Trekking",
+        "Fossil Hunting in Langza",
+        "Jeep Safaris",
+        "Snow Leopard Expedition (Winter)"
+    ],
+    "connectivity": {
+        "nearest_airport": "Bhuntar (Kullu) - 100 km (via Atal Tunnel)",
+        "nearest_railway": "Chandigarh - 350 km",
+        "distance_from_chandigarh": "310 km (via Manali)",
+        "distance_from_delhi": "560 km"
+    },
+    "festivals": [
+        {
+            "name": "Losar (Tibetan New Year)",
+            "month": "February",
+            "description": "The biggest festival in Spiti, celebrated with traditional dances and feasts."
+        },
+        {
+            "name": "Tsheshu Fair",
+            "month": "June/July",
+            "description": "Monastic festivals featuring Cham (masked) dances."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Cold Desert Expedition",
+            "duration": "5 Days",
+            "description": "A life-changing journey through the high mountain passes and ancient monasteries.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Manali to Kaza",
+                    "activities": [
+                        "Atal Tunnel",
+                        "Kunzum Pass",
+                        "Kaza Arrival"
+                    ],
+                    "description": "A long, dramatic drive through the world's longest high-altitude tunnel and over the rugged Kunzum Pass into Spiti Valley."
+                },
+                {
+                    "day": 2,
+                    "title": "Monastic Heritage",
+                    "activities": [
+                        "Key Monastery",
+                        "Kibber Village",
+                        "Chicham Bridge"
+                    ],
+                    "description": "Visit the iconic Key Monastery and the high-perched village of Kibber. Cross the highest bridge in Asia at Chicham."
+                },
+                {
+                    "day": 3,
+                    "title": "World's Highest Post Office",
+                    "activities": [
+                        "Hikkim",
+                        "Komic",
+                        "Langza Buddha Statue"
+                    ],
+                    "description": "Mail a postcard from the highest post office in the world and walk among marine fossils in the high-altitude villages."
+                },
+                {
+                    "day": 4,
+                    "title": "The Moon Lake",
+                    "activities": [
+                        "Dhankar Monastery",
+                        "Chandratal Lake",
+                        "Camping"
+                    ],
+                    "description": "Visit the cliff-side Dhankar Monastery before heading to the crystal clear, crescent-shaped Chandratal Lake."
+                },
+                {
+                    "day": 5,
+                    "title": "Departure",
+                    "activities": [
+                        "Rohtang Pass View",
+                        "Return to Manali"
+                    ],
+                    "description": "Descend back into the lush greenery of Kullu valley after a journey in the desert of Spiti."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Adventure",
+        "Peace"
+    ],
+    "vibe": [
+        "High Altitude",
+        "Snowy"
+    ],
+    "gallery": [
+        "/images/spiti.png"
+    ]
 }

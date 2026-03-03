@@ -47,6 +47,92 @@
         "scientificName": "Lophophorus impejanus",
         "status": "State Bird of HP",
         "description": "A stunning bird with iridescent metallic plumage seen in the higher reaches of Dharamkot.",
-        "image": "/images/nature_monal.png"
-    }
+        "image": "/images/districts/wildlife_kangra.png"
+    },
+    "weather": {
+        "temp_summer": "20°C - 35°C",
+        "temp_winter": "0°C - 15°C",
+        "monsoon_impact": "Substantial rainfall, lush green valleys but potential travel delays",
+        "packing_essentials": "Breathable cottons for summer, light woolens for winter evenings"
+    },
+    "activities": [
+        "Paragliding (Bir-Billing)",
+        "Trekking (Triund)",
+        "Spiritual Tourism",
+        "Rock-cut Temples Visit",
+        "Tea Garden Tours",
+        "Cricket Stadium Visit"
+    ],
+    "connectivity": {
+        "nearest_airport": "Gaggal (Kangra) - 13 km",
+        "nearest_railway": "Pathankot (Broad Gauge) - 90 km",
+        "distance_from_chandigarh": "230 km",
+        "distance_from_delhi": "480 km"
+    },
+    "festivals": [
+        {
+            "name": "Bir Music Festival",
+            "month": "October",
+            "description": "A unique gathering of mountain music and paragliding culture."
+        },
+        {
+            "name": "Shravan Ashtami Festival",
+            "month": "August",
+            "description": "A major pilgrimage event at the Brajeshwari Devi Temple."
+        },
+        {
+            "name": "Makar Sankranti Fair",
+            "month": "January",
+            "description": "A week-long celebration at the Brajeshwari Temple with sacred rituals."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Little Lhasa & Beyond",
+            "duration": "3 Days",
+            "description": "Experience the spiritual vibrations of McLeodganj and the ancient roots of Kangra.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Spiritual McLeodganj",
+                    "activities": [
+                        "Dalai Lama Temple",
+                        "McLeodganj Market",
+                        "Naddi Viewpoint"
+                    ],
+                    "description": "Arrive in the vibrant town of McLeodganj. Visit the serene Dalai Lama Temple and end your day at Naddi for a majestic view of the Dhauladhar range."
+                },
+                {
+                    "day": 2,
+                    "title": "History & Art",
+                    "activities": [
+                        "Kangra Fort",
+                        "St. John in the Wilderness",
+                        "Bhagsunag Waterfall"
+                    ],
+                    "description": "Explore one of the oldest forts in India at Kangra. Visit the gothic St. John's church and take a refreshing walk to the Bhagsu falls."
+                },
+                {
+                    "day": 3,
+                    "title": "Artist's Trail",
+                    "activities": [
+                        "Andretta Village",
+                        "Tea Gardens",
+                        "Dharamshala Stadium"
+                    ],
+                    "description": "Visit the beautiful pottery village of Andretta and walk through the sprawling tea gardens before departing."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Adventure",
+        "Heritage"
+    ],
+    "vibe": [
+        "High Altitude"
+    ],
+    "gallery": [
+        "/images/kangra.png"
+    ]
 }

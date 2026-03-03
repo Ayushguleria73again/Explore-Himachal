@@ -45,7 +45,7 @@
         "name": "Sirmauri Ginger & Garlic",
         "description": "Bold, aromatic spices cultivated in the fertile Giripar mountains, used in local slow-cooked meats.",
         "history": "Sirmaur is the largest ginger-producing district in the state, with traditional farming methods passed down for generations.",
-        "image": "/images/culture_madra.png",
+        "image": "/images/districts/cuisine_sirmaur.png",
         "tip": "Look for the locally made ginger candy and sundried garlic strings in Nahan markets."
     },
     "wildlife": {
@@ -53,6 +53,86 @@
         "scientificName": "Naemorhedus goral",
         "status": "Near Threatened",
         "description": "A nimble, goat-like antelope that thrives in the steep rocky slopes of the Renuka Wildlife Sanctuary.",
-        "image": "/images/nature_ibex.png"
-    }
+        "image": "/images/districts/wildlife_sirmaur.png"
+    },
+    "weather": {
+        "temp_summer": "15°C - 30°C",
+        "temp_winter": "5°C - 20°C",
+        "monsoon_impact": "Heavy rainfall in July-August, ideal for lush greenery around Renuka Lake",
+        "packing_essentials": "Light cottons for summer, light woolens for winter evenings"
+    },
+    "activities": [
+        "Trekking to Churdhar Peak",
+        "Boating in Renuka Lake",
+        "Spiritual Tourism (Paonta Sahib)",
+        "Historical Garden Visits",
+        "Giri River Rafting",
+        "Fossil Park Exploration"
+    ],
+    "connectivity": {
+        "nearest_airport": "Chandigarh - 85 km (from Nahan)",
+        "nearest_railway": "Ambala Cantt - 65 km",
+        "distance_from_chandigarh": "85 km",
+        "distance_from_delhi": "250 km"
+    },
+    "festivals": [
+        {
+            "name": "Renuka Fair",
+            "month": "November",
+            "description": "A major cultural and religious event at Renuka Lake celebrating the goddess."
+        },
+        {
+            "name": "Gandhi Mela (Nahan)",
+            "month": "January",
+            "description": "A traditional fair held to remember Mahatma Gandhi's visit and principles."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Divine Lake & Peeks",
+            "duration": "3 Days",
+            "description": "A peaceful escape through the lakes and Gurudwaras of Sirmaur.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "The Sacred Lake",
+                    "activities": [
+                        "Renuka Lake",
+                        "Renuka Zoo",
+                        "Sunset at Lake"
+                    ],
+                    "description": "Arrive at the largest natural lake in Himachal and visit the sacred temple."
+                },
+                {
+                    "day": 2,
+                    "title": "Riverside Peace",
+                    "activities": [
+                        "Paonta Sahib Gurudwara",
+                        "Yamuna River Bank",
+                        "Museum"
+                    ],
+                    "description": "Visit the historic Paonta Sahib Gurudwara on the banks of the Yamuna River."
+                },
+                {
+                    "day": 3,
+                    "title": "High Peak View",
+                    "activities": [
+                        "Haripurdhar View",
+                        "Return Journey"
+                    ],
+                    "description": "Take a panoramic look at the Churdhar peaks before departing."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Heritage",
+        "Peace"
+    ],
+    "vibe": [
+        "Tropical"
+    ],
+    "gallery": [
+        "/images/sirmaur.png"
+    ]
 }

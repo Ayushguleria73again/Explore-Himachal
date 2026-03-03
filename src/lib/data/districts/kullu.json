@@ -45,7 +45,7 @@
         "name": "Siddu",
         "description": "A steamed bun made from wheat flour, stuffed with poppy seeds, walnuts, and spices.",
         "history": "Siddu is a winter staple in Kullu, providing warmth and energy during the harsh Himalayan winters.",
-        "image": "/images/culture_siddu.png",
+        "image": "/images/districts/cuisine_kullu.png",
         "tip": "Always serve with a generous dollop of pure Desi Ghee (clarified butter)."
     },
     "wildlife": {
@@ -54,5 +54,86 @@
         "status": "Critically Endangered",
         "description": "One of the rarest bears in the world, found only in the high altitude meadows of the Great Himalayan National Park.",
         "image": "/images/nature_brown_bear.png"
-    }
+    },
+    "weather": {
+        "temp_summer": "10°C - 25°C",
+        "temp_winter": "-5°C - 15°C",
+        "monsoon_impact": "Moderate to heavy rain, scenic but landslides possible",
+        "packing_essentials": "Breathable cottons for summer, heavy woolens and waterproof gear for winter/monsoon"
+    },
+    "activities": [
+        "River Rafting",
+        "Paragliding",
+        "Trekking",
+        "Skiing",
+        "River Crossing",
+        "Hot Springs"
+    ],
+    "connectivity": {
+        "nearest_airport": "Bhuntar (Kullu) - 10 km",
+        "nearest_railway": "Joginder Nagar (Narrow Gauge) - 120 km",
+        "distance_from_chandigarh": "270 km",
+        "distance_from_delhi": "490 km"
+    },
+    "festivals": [
+        {
+            "name": "Kullu Dussehra",
+            "month": "October",
+            "description": "A week-long international festival where over 200 deities gather."
+        },
+        {
+            "name": "Winter Carnival",
+            "month": "January",
+            "description": "Celebration of culture and winter sports in the valley."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Valley of Gods",
+            "duration": "3 Days",
+            "description": "A focused journey through the spiritual and natural heart of Kullu.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Riverside Arrival",
+                    "activities": [
+                        "Beas River Walk",
+                        "Raghunath Temple",
+                        "Local Market"
+                    ],
+                    "description": "Settle by the Beas river. Visit the central Raghunath Temple and explore the vibrant local market for Kullu shawls."
+                },
+                {
+                    "day": 2,
+                    "title": "Naggar Heritage",
+                    "activities": [
+                        "Naggar Castle",
+                        "Roerich Art Gallery",
+                        "Krishna Temple"
+                    ],
+                    "description": "Drive to the ancient Naggar Castle, a stunning example of Kathkuni architecture. Visit the Nicholas Roerich Art Gallery."
+                },
+                {
+                    "day": 3,
+                    "title": "Great Himalayan Nature",
+                    "activities": [
+                        "Great Himalayan National Park Gateway",
+                        "Tirthan Valley glimpse"
+                    ],
+                    "description": "Explore the outskirts of the UNESCO Great Himalayan National Park before your departure."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Adventure",
+        "Peace"
+    ],
+    "vibe": [
+        "High Altitude",
+        "Snowy"
+    ],
+    "gallery": [
+        "/images/kullu.png"
+    ]
 }

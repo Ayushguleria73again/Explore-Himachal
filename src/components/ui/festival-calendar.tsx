@@ -4,6 +4,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import { festivalsData, Festival } from "@/lib/data/festivals";
 import { Sparkles, Calendar as CalendarIcon, MapPin } from "lucide-react";
+import Link from "next/link";
 
 const MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -106,12 +107,15 @@ function FestivalCard({ fest, idx, isCurrent = false }: { fest: Festival; idx: n
         {fest.description}
       </p>
 
-      <div className="pt-6 border-t border-gray-100 flex items-center justify-between">
+      <Link 
+        href={`/districts/${fest.districtId}`}
+        className="pt-6 border-t border-gray-100 flex items-center justify-between"
+      >
          <span className="text-[10px] font-black uppercase text-emerald-600 tracking-tighter">Plan Arrival</span>
          <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-all text-emerald-600">
             →
          </div>
-      </div>
+      </Link>
     </motion.div>
   );
 }

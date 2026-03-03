@@ -45,7 +45,7 @@
         "name": "Kinnauri Apples & Chilgoza",
         "description": "Crisp, sun-kissed apples and rare pine nuts (Chilgoza) harvested from high-altitude forests.",
         "history": "Kinnaur is world-famous for its high-quality temperate fruits, which were introduced during the late 19th century.",
-        "image": "/images/culture_siddu.png",
+        "image": "/images/districts/cuisine_kinnaur.png",
         "tip": "Try the freshly pressed apple juice and sun-dried apricots from the Sangla farmers' cooperative."
     },
     "wildlife": {
@@ -53,6 +53,106 @@
         "scientificName": "Pseudois nayaur",
         "status": "Least Concern",
         "description": "Commonly known as Bharal, these mountain sheep are often spotted on the cliffs of the Kalpa region.",
-        "image": "/images/nature_ibex.png"
-    }
+        "image": "/images/districts/wildlife_kinnaur.png"
+    },
+    "weather": {
+        "temp_summer": "10°C - 20°C",
+        "temp_winter": "-15°C - 5°C",
+        "monsoon_impact": "Lower impact than plains but occasional heavy rain in July; autumn is extremely clear",
+        "packing_essentials": "Light woolens for summer peak, heavy winter gear, sturdy trekking boots, and sunblock"
+    },
+    "activities": [
+        "Apple Orchard Tours",
+        "Rock Climbing",
+        "High-altitude Trekking (Kinner Kailash)",
+        "River Rafting (Baspa River)",
+        "Stargazing",
+        "Heritage Village Exploration"
+    ],
+    "connectivity": {
+        "nearest_airport": "Shimla - 220 km",
+        "nearest_railway": "Shimla - 220 km",
+        "distance_from_chandigarh": "330 km",
+        "distance_from_delhi": "580 km"
+    },
+    "festivals": [
+        {
+            "name": "Fagli Utsav",
+            "month": "March",
+            "description": "A unique mask-dance festival celebrating the victory of good over evil."
+        },
+        {
+            "name": "Sazo Festival",
+            "month": "January",
+            "description": "A day when deities are believed to go to heaven for a bath in the celestial waters."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Last Indian Village",
+            "duration": "5 Days",
+            "description": "A mystical journey into the land of apples, high peaks, and ancient legends.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Gateway to Kinnaur",
+                    "activities": [
+                        "Sarahan",
+                        "Bhimakali Temple"
+                    ],
+                    "description": "Start your journey at the architectural marvel of Sarahan."
+                },
+                {
+                    "day": 2,
+                    "title": "Sangla Valley",
+                    "activities": [
+                        "Sangla Meadows",
+                        "Kamru Fort",
+                        "Apple Orchards"
+                    ],
+                    "description": "Enter the beautiful Sangla valley and explore the historic Kamru Fort."
+                },
+                {
+                    "day": 3,
+                    "title": "The Last Village",
+                    "activities": [
+                        "Chitkul",
+                        "Indo-Tibetan Border",
+                        "Baspa River"
+                    ],
+                    "description": "Visit Chitkul, the last inhabited village on the Indian side of the border."
+                },
+                {
+                    "day": 4,
+                    "title": "The Kinner Kailash View",
+                    "activities": [
+                        "Kalpa",
+                        "Suicide Point",
+                        "Roghi Village"
+                    ],
+                    "description": "Witness the sacred Kinner Kailash peaks from the apple town of Kalpa."
+                },
+                {
+                    "day": 5,
+                    "title": "Departure",
+                    "activities": [
+                        "Reckong Peo Market",
+                        "Return Journey"
+                    ],
+                    "description": "A final look at the high peaks before heading back towards Shimla."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Adventure",
+        "Peace"
+    ],
+    "vibe": [
+        "High Altitude",
+        "Snowy"
+    ],
+    "gallery": [
+        "/images/kinnaur.png"
+    ]
 }

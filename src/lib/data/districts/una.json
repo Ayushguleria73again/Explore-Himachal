@@ -45,7 +45,7 @@
         "name": "Chintpurni Prasad & Punjabi Flavors",
         "description": "A mix of traditional temple prasad and the hearty, robust flavors of Punjabi agrarian life.",
         "history": "Una's location on the border of Punjab has created a rich culinary exchange, blending local hill pulses with Punjabi breads.",
-        "image": "/images/culture_madra.png",
+        "image": "/images/districts/cuisine_una.png",
         "tip": "Don't miss the langar (community meal) served at the major shrines in the district."
     },
     "wildlife": {
@@ -53,6 +53,66 @@
         "scientificName": "Panthera pardus fusca",
         "status": "Vulnerable",
         "description": "A versatile predator that roams the hilly terrain of the Shivalik foothills in Una.",
-        "image": "/images/nature_monal.png"
-    }
+        "image": "/images/districts/wildlife_una.png"
+    },
+    "weather": {
+        "temp_summer": "18°C - 45°C",
+        "temp_winter": "2°C - 20°C",
+        "monsoon_impact": "Moderate to heavy rain, often warm and humid",
+        "packing_essentials": "Breathable cottons for summer, light sweaters for winter"
+    },
+    "activities": [
+        "Temple Pilgrimage (Chintpurni)",
+        "Boating (Gobind Sagar)",
+        "Swan River Rafting",
+        "Fort Exploration",
+        "Industrial Tours",
+        "Road Trips"
+    ],
+    "connectivity": {
+        "nearest_airport": "Chandigarh - 120 km",
+        "nearest_railway": "Una Himachal Railway Station",
+        "distance_from_chandigarh": "120 km",
+        "distance_from_delhi": "360 km"
+    },
+    "festivals": [
+        {
+            "name": "Chintpurni Shakti Peeth Mela",
+            "month": "March/April",
+            "description": "A ten-day mega festival at the holy shrine of Goddess Chintpurni."
+        },
+        {
+            "name": "Dera Baba Bharbhag Singh Fair",
+            "month": "February/March",
+            "description": "A very popular fair held at the holy Mairi shrine."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "Gateway Spiritual Trail",
+            "duration": "1 Day",
+            "description": "A day of spiritual reflection and scenic lake views in the gateway district.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Chintpurni & Pong Lake",
+                    "activities": [
+                        "Maa Chintpurni Temple",
+                        "Dera Baba Rudra Nand",
+                        "Pong Lake"
+                    ],
+                    "description": "Visit the holy Chintpurni temple and enjoy the serene waters of Pong Lake."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Heritage"
+    ],
+    "vibe": [
+        "Tropical"
+    ],
+    "gallery": [
+        "/images/una.png"
+    ]
 }

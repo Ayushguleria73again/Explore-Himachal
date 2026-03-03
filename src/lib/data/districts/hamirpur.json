@@ -45,7 +45,7 @@
         "name": "Sujanpuri Rot & Katara Food",
         "description": "A unique mix of sacred temple offerings (Rot) and the robust, simple meals of the Katoch warriors.",
         "history": "Hamirpur's culinary history is tied to the Sujanpur Tira court, where grand feasts were hosted by the Katoch kings.",
-        "image": "/images/culture_madra.png",
+        "image": "/images/districts/cuisine_hamirpur.png",
         "tip": "The 'Baba Balak Nath Rot' is a sacred whole-wheat offering that is famous across northern India."
     },
     "wildlife": {
@@ -53,6 +53,65 @@
         "scientificName": "Muntiacus muntjak",
         "status": "Least Concern",
         "description": "A common sight in the pine-covered hills of Hamirpur, known for its vocalizations that resemble a bark.",
-        "image": "/images/nature_ibex.png"
-    }
+        "image": "/images/districts/wildlife_hamirpur.png"
+    },
+    "weather": {
+        "temp_summer": "20°C - 38°C",
+        "temp_winter": "4°C - 20°C",
+        "monsoon_impact": "Substantial rainfall, transforming the pine forests into a deep green, but high humidity",
+        "packing_essentials": "Breathable cottons for summer, light woolens for winter nights"
+    },
+    "activities": [
+        "Temple Pilgrimage (Deotsidh)",
+        "Fort Exploration (Sujanpur)",
+        "Angling in Beas River",
+        "Trekking in Pine Forests",
+        "Walking the Sujanpur Chaugan",
+        "Spiritual Retreats"
+    ],
+    "connectivity": {
+        "nearest_airport": "Gaggal (Kangra) - 80 km",
+        "nearest_railway": "Una - 65 km",
+        "distance_from_chandigarh": "190 km",
+        "distance_from_delhi": "391 km"
+    },
+    "festivals": [
+        {
+            "name": "Hamir Utsav",
+            "month": "November (First Week)",
+            "description": "State-level fair commemorating the creation of the district with cultural performances."
+        },
+        {
+            "name": "Baba Balak Nath Holi Mela",
+            "month": "March",
+            "description": "Celebrated with great fervor at the Deotsidh shrine."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Land of Heroes",
+            "duration": "1 Day",
+            "description": "A quick dive into the historic forts and holy shrines of Hamirpur.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Forts & Shrines",
+                    "activities": [
+                        "Baba Balak Nath Temple",
+                        "Sujanpur Tira Fort"
+                    ],
+                    "description": "Visit the highly revered Deotsidh temple and the historic Sujanpur Tira Fort."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Heritage"
+    ],
+    "vibe": [
+        "Tropical"
+    ],
+    "gallery": [
+        "/images/hamirpur.png"
+    ]
 }

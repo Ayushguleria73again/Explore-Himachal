@@ -45,7 +45,7 @@
         "name": "Red Rice & Sidu",
         "description": "A combination of nutrient-rich Himalayan red rice and steamed walnut-stuffed buns.",
         "history": "Red rice has been harvested in the Shimla hills for centuries, prized for its earthy flavor and medicinal properties.",
-        "image": "/images/culture_siddu.png",
+        "image": "/images/districts/cuisine_shimla.png",
         "tip": "Enjoy it with fresh apricot chutney found in the upper Shimla regions."
     },
     "wildlife": {
@@ -53,6 +53,143 @@
         "scientificName": "Catreus wallichii",
         "status": "Vulnerable",
         "description": "A shy, long-tailed pheasant found in the steep grassy hills of the Shimla wildlife sanctuaries.",
-        "image": "/images/nature_monal.png"
-    }
+        "image": "/images/districts/wildlife_shimla.png"
+    },
+    "weather": {
+        "temp_summer": "15°C - 30°C",
+        "temp_winter": "-6°C - 10°C",
+        "monsoon_impact": "Heavy rainfall, occasional landslides",
+        "packing_essentials": "Light woolens for summer, heavy jackets and thermals for winter"
+    },
+    "activities": [
+        "Heritage Walk",
+        "Skiing",
+        "Ice Skating",
+        "Toy Train Ride",
+        "Hiking",
+        "Shopping"
+    ],
+    "connectivity": {
+        "nearest_airport": "Jubarhatti (Shimla) - 22 km",
+        "nearest_railway": "Shimla Railway Station",
+        "distance_from_chandigarh": "113 km",
+        "distance_from_delhi": "343 km"
+    },
+    "festivals": [
+        {
+            "name": "Shimla Summer Festival",
+            "month": "June",
+            "description": "A colorful celebration of local culture, music, and food."
+        },
+        {
+            "name": "Ice Skating Carnival",
+            "month": "December",
+            "description": "Celebrating the winter spirit at South Asia's only natural ice skating rink."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Colonial Quintessential",
+            "duration": "3 Days",
+            "description": "A perfect introduction to Shimla's heritage and mountain magic.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Colonial Footprints",
+                    "activities": [
+                        "Viceregal Lodge",
+                        "State Museum",
+                        "The Ridge"
+                    ],
+                    "description": "Arrive and settle into the colonial vibe. Visit the grand Viceregal Lodge, the State Museum for local heritage, and end your day on The Ridge with a sunset view."
+                },
+                {
+                    "day": 2,
+                    "title": "Kufri High Peaks",
+                    "activities": [
+                        "Himalayan Nature Park",
+                        "Mahasu Peak",
+                        "Jakhu Temple"
+                    ],
+                    "description": "Drive out to Kufri for breathtaking nature views and yak rides. Return to Shimla to hike (or take the ropeway) to Jakhu Temple, the highest point in town."
+                },
+                {
+                    "day": 3,
+                    "title": "The Mall Experience",
+                    "activities": [
+                        "Mall Road",
+                        "Lakkar Bazaar",
+                        "Christ Church"
+                    ],
+                    "description": "Spend your final day shopping for local handicrafts at Lakkar Bazaar and enjoying high tea at one of the legendary Mall Road cafes."
+                }
+            ]
+        },
+        {
+            "title": "The Full Ridge Escape",
+            "duration": "5 Days",
+            "description": "Explore beyond the city to the pristine valleys and heritage forest trails.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Arrival & The Central Walk",
+                    "activities": [
+                        "Mall Road",
+                        "Gaiety Theatre",
+                        "The Ridge"
+                    ],
+                    "description": "Arrive and explore the social heart of the city."
+                },
+                {
+                    "day": 2,
+                    "title": "Colonial Legacy",
+                    "activities": [
+                        "Viceregal Lodge",
+                        "Glen Forest",
+                        "Annadale"
+                    ],
+                    "description": "Dive deep into history and the lush green surrounding forests."
+                },
+                {
+                    "day": 3,
+                    "title": "Kufri & Fagu Valleys",
+                    "activities": [
+                        "Adventure Park",
+                        "Fagu Viewpoints",
+                        "Potato Threshing Farm"
+                    ],
+                    "description": "Head further out to the scenic orchards of Fagu."
+                },
+                {
+                    "day": 4,
+                    "title": "Tattapani Hot Springs",
+                    "activities": [
+                        "Rafting",
+                        "Sulphur Springs",
+                        "Siva Caves"
+                    ],
+                    "description": "A drive to the Sutlej river for adventure and relaxation."
+                },
+                {
+                    "day": 5,
+                    "title": "Farewell Walk",
+                    "activities": [
+                        "Tara Devi Temple",
+                        "Last-minute Shopping"
+                    ],
+                    "description": "A spiritual end to your journey before departing."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Heritage",
+        "Peace"
+    ],
+    "vibe": [
+        "Snowy"
+    ],
+    "gallery": [
+        "/images/shimla.png"
+    ]
 }

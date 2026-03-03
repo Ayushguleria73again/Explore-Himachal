@@ -10,31 +10,31 @@ import { useState, useEffect } from "react";
 const GALLERY_IMAGES = [
   {
     id: 1,
-    src: "/images/community_spiti_stars_1772429679558.png",
-    alt: "Starlit Spiti Campfire",
+    src: "/images/culture_nati_dance.jpg",
+    alt: "Nati Dance Celebration",
     author: "@mountain_soul",
     likes: "1.2k",
     span: "md:col-span-2 md:row-span-2",
   },
   {
     id: 2,
-    src: "/images/community_shimla_cafe_1772429694890.png",
-    alt: "Shimla Cafe Morning",
+    src: "/images/culture_kullu_dussehra.jpg",
+    alt: "Kullu Dussehra Festival",
     author: "@himalayan_brews",
     likes: "840",
     span: "md:col-span-1 md:row-span-1",
   },
   {
     id: 3,
-    src: "/images/community_manali_trek_1772429714302.png",
-    alt: "Manali Trekking POV",
+    src: "/images/culture_minjar_mela.jpg",
+    alt: "Minjar Mela Chamba",
     author: "@trail_blazer",
     likes: "2.1k",
     span: "md:col-span-1 md:row-span-2",
   },
   {
     id: 4,
-    src: "/images/culture_masked_cham.jpg", // Using an existing cultural image as the 4th
+    src: "/images/culture_masked_cham.jpg",
     alt: "Traditional Mask Dance",
     author: "@culture_keeper",
     likes: "956",

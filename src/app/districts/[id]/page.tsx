@@ -8,6 +8,12 @@ import { MetaItem } from "@/components/ui/meta-item";
 import { WeatherWidget } from "@/components/ui/weather-widget";
 import { CuisineSpotlight } from "@/components/ui/cuisine-spotlight";
 import { NatureArchive } from "@/components/ui/nature-archive";
+import { WeatherGuide } from "@/components/ui/weather-guide";
+import { ActivityTags } from "@/components/ui/activity-tags";
+import { ConnectivityHub } from "@/components/ui/connectivity-hub";
+import { DistrictFestivals } from "@/components/ui/district-festivals";
+import { DistrictGallery } from "@/components/ui/district-gallery";
+import { TourPlanner } from "@/components/ui/tour-planner";
 
 export async function generateStaticParams() {
   const params = districtsData.map((district) => ({
@@ -95,7 +101,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ id: s
             </section>
 
             <section className="pt-20 border-t border-gray-100 relative">
-               <div className="absolute -top-px left-0 w-24 h-px bg-amber-500" />
+               <div className="absolute -top-px left-0 w-24 h-px bg-vibrant/50" />
                <div className="flex items-center gap-4 mb-10">
                  <div className="p-2.5 bg-amber-50 rounded-xl text-amber-600">
                    <div className="w-5 h-5 border-2 border-amber-600 rounded-full flex items-center justify-center font-black text-[10px]">C</div>
@@ -106,28 +112,30 @@ export default async function DistrictPage({ params }: { params: Promise<{ id: s
                  {district.culture}
                </p>
             </section>
-
-            <section className="pt-20 border-t border-gray-100">
-               <div className="flex items-center gap-4 mb-10">
-                 <div className="p-2.5 bg-sky-50 rounded-xl text-sky-600">
-                   <Camera size={20} strokeWidth={2.5} />
-                 </div>
-                 <h2 className="text-[11px] uppercase tracking-[0.4em] text-gray-950 font-black">Visual Archive</h2>
-               </div>
-               <div className="grid grid-cols-2 gap-6">
-                  <div className="aspect-[4/5] bg-emerald-50 relative overflow-hidden rounded-2xl group">
-                     <Image src={district.image} alt="Gallery 1" fill sizes="50vw" className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                  </div>
-                  <div className="aspect-[4/5] bg-gray-50 flex items-center justify-center rounded-2xl border-2 border-dashed border-gray-100">
-                    <span className="text-[10px] uppercase tracking-widest text-gray-400 font-black text-center px-6">More high altitude <br/>stills coming soon</span>
-                  </div>
-               </div>
-            </section>
           </div>
         </div>
+      </div>
 
+      {/* Full Width Info sections - Upscaled Presence */}
+      <div className="mt-32 border-t border-gray-100 pt-32 bg-gray-50/30">
+        <div className="max-w-7xl mx-auto px-6 space-y-40">
+           {/* Travel Intelligence Group */}
+           <div className="space-y-40">
+              <WeatherGuide weather={district.weather} />
+              <ActivityTags activities={district.activities} />
+              <TourPlanner itineraries={district.itineraries} />
+              <ConnectivityHub connectivity={district.connectivity} />
+              <DistrictFestivals festivals={district.festivals} />
+            </div>
+
+            {/* Photo Gallery */}
+            <DistrictGallery images={district.gallery} districtName={district.name} />
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6">
         {/* Phase 4 Deep Dive Sections */}
-        <div className="mt-32 space-y-32">
+        <div className="mt-40 space-y-40">
           {district.cuisine && (
             <CuisineSpotlight cuisine={district.cuisine} />
           )}

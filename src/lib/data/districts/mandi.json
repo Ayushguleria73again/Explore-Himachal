@@ -54,5 +54,75 @@
         "status": "State Bird",
         "description": "A magnificent bird found in the dense oak and deodar forests of the Janjehli valley.",
         "image": "/images/nature_monal.png"
-    }
+    },
+    "weather": {
+        "temp_summer": "15°C - 35°C",
+        "temp_winter": "5°C - 20°C",
+        "monsoon_impact": "Substantial rainfall in July-August, turning the valleys lush and green",
+        "packing_essentials": "Cotton clothing for summer, light woolens for winter"
+    },
+    "activities": [
+        "Trekking (Prashar Lake)",
+        "Spiritual Tourism (80+ Temples)",
+        "River Rafting (Beas River)",
+        "Fishing (Barot Valley)",
+        "Camping in Janjehli",
+        "Walking the Victoria Bridge"
+    ],
+    "connectivity": {
+        "nearest_airport": "Bhuntar (Kullu) - 60 km",
+        "nearest_railway": "Joginder Nagar (Narrow Gauge) - 55 km",
+        "distance_from_chandigarh": "185 km",
+        "distance_from_delhi": "430 km"
+    },
+    "festivals": [
+        {
+            "name": "International Shivratri Fair",
+            "month": "February/March",
+            "description": "A seven-day mega event where hundreds of local deities congregate."
+        },
+        {
+            "name": "Sair Festival",
+            "month": "September",
+            "description": "Celebrating the end of the harvest with traditional rituals and buffalo fights."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "Varanasi of the Hills",
+            "duration": "2 Days",
+            "description": "A spiritual and scenic weekend in the historic town of Mandi.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Town of Temples",
+                    "activities": [
+                        "Bhootnath Temple",
+                        "Panchvaktra Temple",
+                        "Beas River Side"
+                    ],
+                    "description": "Explore the 81 old stone temples of Mandi and the iconic Victoria Bridge."
+                },
+                {
+                    "day": 2,
+                    "title": "The Floating Island",
+                    "activities": [
+                        "Rewalsar Lake",
+                        "Prashar Lake (Optional Trek)"
+                    ],
+                    "description": "Visit the sacred Rewalsar Lake, a place of pilgrimage for three religions."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Heritage",
+        "Peace"
+    ],
+    "vibe": [
+        "Tropical"
+    ],
+    "gallery": [
+        "/images/mandi.png"
+    ]
 }

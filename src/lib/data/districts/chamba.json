@@ -54,5 +54,85 @@
         "status": "Least Concern",
         "description": "A sturdy mountain goat known for its large curved horns, found in the high cliffs of the Pangi valley.",
         "image": "/images/nature_ibex.png"
-    }
+    },
+    "weather": {
+        "temp_summer": "15°C - 35°C",
+        "temp_winter": "0°C - 15°C",
+        "monsoon_impact": "Moderate rainfall, misty landscapes, landslides possible on high passes",
+        "packing_essentials": "Light cottons for summer, heavy woolens for winter snowfall visits"
+    },
+    "activities": [
+        "Boating (Chamera Lake)",
+        "Trekking (Manimahesh)",
+        "Historical Walks",
+        "Handicraft Shopping",
+        "Horseback Riding (Khajjiar)",
+        "River Rafting (Ravi River)"
+    ],
+    "connectivity": {
+        "nearest_airport": "Gaggal (Kangra) - 120 km",
+        "nearest_railway": "Pathankot - 120 km",
+        "distance_from_chandigarh": "340 km",
+        "distance_from_delhi": "600 km"
+    },
+    "festivals": [
+        {
+            "name": "Minjar Mela",
+            "month": "July/August",
+            "description": "An international harvest festival marked by cultural processions and silken tassels."
+        },
+        {
+            "name": "Suhi Mata Mela",
+            "month": "April",
+            "description": "A fair dedicated to the sacrifice of Queen Sunayana for the town's water supply."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Antique Hills",
+            "duration": "3 Days",
+            "description": "A journey through time in the medieval town of Chamba and the alpine meadows of Khajjiar.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Chamba Town Heritage",
+                    "activities": [
+                        "Laxmi Narayan Temple",
+                        "Bhuri Singh Museum",
+                        "Chaugan"
+                    ],
+                    "description": "Explore the ancient temples of Chamba town and the Bhuri Singh Museum which houses rare Pahari paintings."
+                },
+                {
+                    "day": 2,
+                    "title": "Mini Switzerland",
+                    "activities": [
+                        "Khajjiar Lake",
+                        "Kalatop Wildlife Sanctuary",
+                        "Horse Riding"
+                    ],
+                    "description": "Drive to Khajjiar, often called the Mini Switzerland of India, for a day of nature and picnics."
+                },
+                {
+                    "day": 3,
+                    "title": "Temple Trail",
+                    "activities": [
+                        "Chamera Lake",
+                        "Sui Mata Temple"
+                    ],
+                    "description": "Visit the beautiful Chamera Lake for boating before heading back."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Heritage",
+        "Peace"
+    ],
+    "vibe": [
+        "High Altitude"
+    ],
+    "gallery": [
+        "/images/chamba.png"
+    ]
 }

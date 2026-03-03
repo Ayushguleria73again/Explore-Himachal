@@ -45,7 +45,7 @@
         "name": "Mushroom & Tomato Spotlight",
         "description": "Solan is the 'Mushroom City of India', producing high-quality button mushrooms and 'Red Gold' tomatoes.",
         "history": "Horticultural excellence began in the mid-20th century, transforming Solan into a vital producer of organic vegetables for north India.",
-        "image": "/images/culture_siddu.png",
+        "image": "/images/districts/cuisine_solan.png",
         "tip": "Visit the DMR (Directorate of Mushroom Research) to see unique cultivation techniques."
     },
     "wildlife": {
@@ -53,6 +53,77 @@
         "scientificName": "Muntiacus muntjak",
         "status": "Least Concern",
         "description": "A small, shy deer known for its distinctive bark, often seen in the forests surrounding Chail.",
-        "image": "/images/nature_ibex.png"
-    }
+        "image": "/images/districts/wildlife_solan.png"
+    },
+    "weather": {
+        "temp_summer": "15°C - 30°C",
+        "temp_winter": "0°C - 15°C",
+        "monsoon_impact": "Moderate rainfall, fresh green surroundings, and cool misty breeze",
+        "packing_essentials": "Light cottons and a light jacket for summer, woolens for winter"
+    },
+    "activities": [
+        "Trekking (Karol Tibba)",
+        "Heritage Walk (Kasauli)",
+        "Brewery Tours",
+        "Mushroom Research Visit",
+        "Skyline Views (Chail)",
+        "Temple Pilgrimage"
+    ],
+    "connectivity": {
+        "nearest_airport": "Chandigarh - 68 km",
+        "nearest_railway": "Kalka - 40 km",
+        "distance_from_chandigarh": "68 km",
+        "distance_from_delhi": "310 km"
+    },
+    "festivals": [
+        {
+            "name": "Shoolini Mela",
+            "month": "June",
+            "description": "A vibrant fair celebrated to honor Shoolini Devi, the presiding goddess of the Solan region."
+        },
+        {
+            "name": "Sair Fair",
+            "month": "Mid-September",
+            "description": "A traditional harvesting fair celebrated with enthusiasm in the Arki region."
+        }
+    ],
+    "itineraries": [
+        {
+            "title": "The Heritage & Hills",
+            "duration": "2 Days",
+            "description": "Explore the heritage shrines and brewery trails of Solan.",
+            "days": [
+                {
+                    "day": 1,
+                    "title": "Spiritual Shrines",
+                    "activities": [
+                        "Jatoli Shiv Temple",
+                        "Mohan Shakti Heritage Park",
+                        "Mall Road"
+                    ],
+                    "description": "Visit the tallest Shiva temple and the grand heritage park."
+                },
+                {
+                    "day": 2,
+                    "title": "Hill Station Charm",
+                    "activities": [
+                        "Barog",
+                        "Dagshai",
+                        "Mount Karol"
+                    ],
+                    "description": "Explore the historic cantonments and scenic railway stations."
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Heritage",
+        "Peace"
+    ],
+    "vibe": [
+        "Tropical"
+    ],
+    "gallery": [
+        "/images/solan.png"
+    ]
 }
