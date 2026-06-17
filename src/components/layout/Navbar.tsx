@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Menu, X, Landmark, Map, Compass, Info } from "lucide-react";
+import { Menu, X, Landmark, Map, Compass, Info, Sliders } from "lucide-react";
 import NextLink from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -20,6 +20,7 @@ export function Navbar({ isDetail = false, title = "Himachal." }: { isDetail?: b
     { name: "Explore", href: "/explore", icon: <Compass size={14} strokeWidth={2.5} /> },
     { name: "Districts", href: "/archive", icon: <Map size={14} strokeWidth={2.5} /> },
     { name: "Culture", href: "/culture", icon: <Landmark size={14} strokeWidth={2.5} /> },
+    { name: "Planner", href: "/planner", icon: <Sliders size={14} strokeWidth={2.5} /> },
     { name: "About", href: "/about", icon: <Info size={14} strokeWidth={2.5} /> },
   ];
 

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Gem, Compass, Map, Star, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { PackingAssistant } from "./packing-assistant";
 
 const hiddenGems = [
   {
@@ -136,6 +137,9 @@ export function ExploreContent() {
           ))}
         </div>
       </section>
+
+      {/* Smart Packing Assistant */}
+      <PackingAssistant />
 
       {/* Editor's Picks */}
       <section>
