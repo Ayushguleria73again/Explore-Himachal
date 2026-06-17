@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { districtsData, District } from "@/lib/data/districts";
 import svgPaths from "@/lib/data/map/districts_svg.json";
-import { WeatherWidget } from "./weather-widget";
+import { WeatherWidget } from "@/components/features/districts/weather-widget";
 
 const DISTRICT_ID_MAP: Record<string, string> = {
   "Lahaul and Spiti": "lahaul-spiti",

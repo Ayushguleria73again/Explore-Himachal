@@ -90,5 +90,50 @@ export const festivalsData: Festival[] = [
         districtId: "kinnaur",
         description: "A poignant festival dedicated to the village deity and the departed souls, marked by flower-covered gathering.",
         vibe: "Mystical"
+    },
+    {
+        id: "halda",
+        name: "Halda Festival",
+        month: 1, // February
+        district: "Lahaul and Spiti",
+        districtId: "lahaul-spiti",
+        description: "Lahaul's festival of lights and New Year celebration dedicated to the Goddess of Wealth Shiskar Apa, featuring cedar-twig bonfires, music, and community dances.",
+        vibe: "Mystical"
+    },
+    {
+        id: "sazo",
+        name: "Sazo Festival",
+        month: 0, // January
+        district: "Kinnaur",
+        districtId: "kinnaur",
+        description: "Kinnaur's ancient mid-winter festival marking the ritual departure of local deities to heaven, characterized by river purifications and house cleaning.",
+        vibe: "Spiritual"
+    },
+    {
+        id: "lavi-fair",
+        name: "Lavi Fair",
+        month: 10, // November
+        district: "Shimla",
+        districtId: "shimla",
+        description: "One of the oldest international trade and cultural fairs in Rampur Bushahr, Shimla, showcasing traditional woolen goods, horses, and local dances.",
+        vibe: "Cultural"
+    },
+    {
+        id: "dhungri-mela",
+        name: "Dhungri Mela",
+        month: 4, // May
+        district: "Kullu",
+        districtId: "kullu",
+        description: "Celebrated at the historical wooden Hadimba Devi Temple in Manali to celebrate the Goddess's birthday with local deity palanquins and folk music.",
+        vibe: "Vibrant"
+    },
+    {
+        id: "sair",
+        name: "Sair Festival",
+        month: 8, // September
+        district: "Kangra",
+        districtId: "kangra",
+        description: "A traditional harvest festival marking the end of the monsoon season and welcoming the autumn crops, celebrated with community feasts and walnut gifts.",
+        vibe: "Cultural"
     }
 ];

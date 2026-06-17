@@ -4,16 +4,16 @@ import { districtsData } from "@/lib/data/districts";
 import { MapPin, History, Camera, Info } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { MetaItem } from "@/components/ui/meta-item";
-import { WeatherWidget } from "@/components/ui/weather-widget";
-import { CuisineSpotlight } from "@/components/ui/cuisine-spotlight";
-import { NatureArchive } from "@/components/ui/nature-archive";
-import { WeatherGuide } from "@/components/ui/weather-guide";
-import { ActivityTags } from "@/components/ui/activity-tags";
-import { ConnectivityHub } from "@/components/ui/connectivity-hub";
-import { DistrictFestivals } from "@/components/ui/district-festivals";
-import { DistrictGallery } from "@/components/ui/district-gallery";
-import { TourPlanner } from "@/components/ui/tour-planner";
+import { MetaItem } from "@/components/features/districts/meta-item";
+import { WeatherWidget } from "@/components/features/districts/weather-widget";
+import { CuisineSpotlight } from "@/components/features/districts/cuisine-spotlight";
+import { NatureArchive } from "@/components/features/districts/nature-archive";
+import { WeatherGuide } from "@/components/features/districts/weather-guide";
+import { ActivityTags } from "@/components/features/districts/activity-tags";
+import { ConnectivityHub } from "@/components/features/districts/connectivity-hub";
+import { DistrictFestivals } from "@/components/features/districts/district-festivals";
+import { DistrictGallery } from "@/components/features/districts/district-gallery";
+import { TourPlanner } from "@/components/features/districts/tour-planner";
 
 export async function generateStaticParams() {
   const params = districtsData.map((district) => ({

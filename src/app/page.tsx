@@ -1,40 +1,18 @@
-"use client";
-
-import React, { useState, useMemo } from "react";
-import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import React from "react";
 import Image from "next/image";
-import { Mountain, Waves, Compass, TreePine, Sparkles } from "lucide-react";
-import { districtsData, District } from "@/lib/data/districts";
+import { Mountain, Waves, Compass, TreePine } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { FactBlock } from "@/components/ui/fact-block";
-import { DistrictCard } from "@/components/ui/district-card";
-import { CultureItem } from "@/components/ui/culture-item";
-import { InteractiveMap } from "@/components/ui/InteractiveMap";
-import { FestivalCalendar } from "@/components/ui/festival-calendar";
-import { ItineraryPlanner } from "@/components/ui/itinerary-planner";
-import { CommunityGallery } from "@/components/ui/community-gallery";
+import { FactBlock } from "@/components/features/home/fact-block";
+import { CultureItem } from "@/components/features/culture/culture-item";
+import { InteractiveMap } from "@/components/features/home/InteractiveMap";
+import { FestivalCalendar } from "@/components/features/home/festival-calendar";
+import { ItineraryPlanner } from "@/components/features/home/itinerary-planner";
+import { CommunityGallery } from "@/components/features/home/community-gallery";
 import ScrollExpandMedia from "@/components/ui/scroll-expansion-hero";
-import { DiscoveryFilter } from "@/components/ui/discovery-filter";
-import { motion, AnimatePresence } from "framer-motion";
+import { DiscoverySection } from "@/components/features/home/discovery-section";
 
 export default function Home() {
-  const [filters, setFilters] = useState<{ interests: string[]; vibe: string[] }>({ interests: [], vibe: [] });
-
-  const filteredDistricts = useMemo(() => {
-    if (filters.interests.length === 0 && filters.vibe.length === 0) return districtsData;
-
-    return districtsData.filter(d => {
-      const interestsMatch = filters.interests.length === 0 || 
-        filters.interests.some(i => (d.interests || []).includes(i as any));
-      
-      const vibeMatch = filters.vibe.length === 0 || 
-        filters.vibe.some(v => (d.vibe || []).includes(v as any));
-      
-      return interestsMatch && vibeMatch;
-    });
-  }, [filters]);
-
   return (
     <main className="bg-white text-gray-900 min-h-screen">
       <Navbar />
@@ -68,48 +46,8 @@ export default function Home() {
         <InteractiveMap />
       </section>
 
-      {/* Districts Grid */}
-      <section id="districts" className="max-w-7xl mx-auto px-6 py-40 border-t border-gray-100">
-        <div className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-12">
-          <div>
-            <h2 className="text-[11px] uppercase tracking-[0.5em] text-amber-500 font-black mb-4 flex items-center gap-3">
-              <Sparkles size={16} /> District Discovery
-            </h2>
-            <p className="text-4xl md:text-5xl font-black tracking-tighter text-gray-950">
-               State of <span className="text-amber-500">Diversity.</span>
-            </p>
-          </div>
-          <div className="flex-grow max-w-2xl">
-            <DiscoveryFilter onFilterChange={setFilters} />
-          </div>
-        </div>
-        
-        <motion.div 
-          layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-16"
-        >
-          <AnimatePresence mode="popLayout">
-            {filteredDistricts.length > 0 ? (
-              filteredDistricts.map((d, index) => (
-                <motion.div
-                  key={d.id}
-                  layout
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.4 }}
-                >
-                  <DistrictCard district={d} index={index} />
-                </motion.div>
-              ))
-            ) : (
-              <div className="col-span-full py-32 text-center bg-gray-50 rounded-[3rem] border border-gray-100">
-                 <p className="text-gray-400 font-black text-[12px] uppercase tracking-[0.4em]">No districts match your specific vibe yet.</p>
-              </div>
-            )}
-          </AnimatePresence>
-        </motion.div>
-      </section>
+      {/* Districts Grid (SSR/Discovery Section) */}
+      <DiscoverySection />
 
       {/* Facts Section */}
       <section className="bg-emerald-950 py-40 mt-20 relative overflow-hidden">
@@ -183,7 +121,7 @@ export default function Home() {
         <CommunityGallery />
       </section>
 
-      {/* Festival Calendar - Moved to last */}
+      {/* Festival Calendar */}
       <section className="bg-gray-50/30 border-t border-gray-100">
         <FestivalCalendar />
       </section>

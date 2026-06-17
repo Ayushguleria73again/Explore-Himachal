@@ -53,14 +53,16 @@ export function ItineraryPlanner() {
       });
 
       if (!response.ok) {
-        throw new Error("Gemini AI not available. Using local archival logic.");
+        throw new Error("Gemini AI not available.");
       }
 
       const data = await response.json();
       setResult(data);
+      setIsGenerating(false);
     } catch (err) {
       console.warn("Falling back to local logic:", err);
-      // Local Logic Fallback
+      setError("AI generation is temporarily busy due to high demand. Crafted a recommended route from our local database.");
+      
       setTimeout(() => {
         const selectedDistricts = VIBE_DATA[vibe].districts;
         const steps: ItineraryStep[] = [];
@@ -80,9 +82,8 @@ export function ItineraryPlanner() {
           });
         }
         setResult(steps);
-      }, 1500);
-    } finally {
-      setIsGenerating(false);
+        setIsGenerating(false);
+      }, 1200);
     }
   };
 
@@ -148,6 +149,17 @@ export function ItineraryPlanner() {
 
       {/* Results Display */}
       <div className="mt-20">
+        {error && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-8 p-5 bg-amber-50 border border-amber-100 rounded-3xl text-[12px] font-bold text-amber-800 flex items-center gap-4 shadow-sm"
+          >
+            <div className="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse shrink-0" />
+            <p className="leading-relaxed">{error}</p>
+          </motion.div>
+        )}
+
         <AnimatePresence mode="wait">
           {result && (
             <motion.div
