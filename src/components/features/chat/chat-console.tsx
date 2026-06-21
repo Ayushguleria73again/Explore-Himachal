@@ -161,7 +161,7 @@ export function ChatConsole() {
           </div>
           
           <p className="text-gray-500 text-xs font-semibold leading-relaxed">
-            Mela Ram represents the spirit of Himachali hospitality. Programmed using local geography databases and cultural archives, he answers queries regarding passes, altitudes, weather alerts, road routes, and custom food recommendations.
+            Created in loving memory of the real Mela Ram—a retired Indian Army Subedar & Honorary Captain from Beh Bagroli, Kangra—our AI guide brings his authentic local warmth and travel wisdom to your Himalayan journey.
           </p>
 
           <div className="p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50 space-y-3">
