@@ -69,13 +69,13 @@ export function PlannerContent() {
   ];
 
   return (
-    <section className="pt-40 pb-32 px-6 max-w-7xl mx-auto">
+    <section className="pt-40 pb-32 px-6 max-w-7xl mx-auto print:pt-0 print:pb-0 print:px-0">
       {/* Header Banner */}
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="mb-20 text-center"
+        className="mb-20 text-center print:hidden"
       >
         <span className="flex items-center justify-center gap-2 text-[10px] uppercase tracking-[0.5em] text-emerald-500 font-black bg-emerald-50 px-4 py-1.5 rounded-full w-max mx-auto mb-10">
            <Compass size={12} strokeWidth={3} /> Voyager Tools
@@ -90,7 +90,7 @@ export function PlannerContent() {
       </motion.div>
 
       {/* Tab Selectors */}
-      <div className="flex flex-wrap justify-center gap-4 mb-20">
+      <div className="flex flex-wrap justify-center gap-4 mb-20 print:hidden">
         {tabs.map((tab) => {
           const isActive = activeTab === tab.id;
           return (
@@ -127,7 +127,7 @@ export function PlannerContent() {
       </div>
 
       {/* Active Tab Panel */}
-      <div className="bg-white rounded-[3.5rem] min-h-[600px] relative">
+      <div className="bg-white rounded-[3.5rem] min-h-[600px] relative print:bg-transparent print:rounded-none print:min-h-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
@@ -137,12 +137,12 @@ export function PlannerContent() {
             transition={{ duration: 0.3 }}
           >
             {activeTab === "itinerary" && (
-              <div className="border border-gray-100 rounded-[3.5rem] bg-gray-50/20">
+              <div className="border border-gray-100 rounded-[3.5rem] bg-gray-50/20 print:border-none print:bg-transparent">
                 <ItineraryPlanner />
               </div>
             )}
             {activeTab === "packing" && (
-              <div className="border border-gray-100 rounded-[3.5rem] bg-white">
+              <div className="border border-gray-100 rounded-[3.5rem] bg-white print:border-none print:bg-transparent">
                 <PackingAssistant />
               </div>
             )}

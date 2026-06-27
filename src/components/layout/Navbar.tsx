@@ -26,7 +26,7 @@ export function Navbar({ isDetail = false, title = "Himachal." }: { isDetail?: b
 
   return (
     <nav 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 print:hidden transition-all duration-300 ${
         isScrolled 
           ? "bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm py-4" 
           : "bg-transparent py-8"

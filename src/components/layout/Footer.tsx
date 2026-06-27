@@ -2,7 +2,7 @@ import React from "react";
 
 export function Footer() {
   return (
-    <footer id="main-footer" style={{backgroundColor: '#ffffff'}} className="pt-24 pb-16 text-gray-900 overflow-hidden relative border-t border-gray-100">
+    <footer id="main-footer" style={{backgroundColor: '#ffffff'}} className="pt-24 pb-16 text-gray-900 overflow-hidden relative border-t border-gray-100 print:hidden">
       {/* Subtle background elements */}
       <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-emerald-50 rounded-full blur-[100px]" />
       <div className="absolute -top-24 -right-24 w-64 h-64 bg-amber-50 rounded-full blur-[100px]" />

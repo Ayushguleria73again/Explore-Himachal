@@ -88,13 +88,13 @@ export function ItineraryPlanner() {
   };
 
   return (
-    <section className="py-32 px-6 max-w-5xl mx-auto">
-      <div className="text-center mb-20">
+    <section className="py-32 px-6 max-w-5xl mx-auto print:py-0 print:px-0">
+      <div className="text-center mb-20 print:hidden">
         <h2 className="text-[11px] uppercase tracking-[0.5em] text-emerald-500 font-black mb-4">The Route Maker</h2>
         <p className="text-4xl md:text-6xl font-black tracking-tighter text-gray-950">Design your <br/>Himalayan journey.</p>
       </div>
 
-      <div className="bg-gray-50 p-8 md:p-12 rounded-[3.5rem] border border-gray-100 shadow-2xl shadow-emerald-900/5">
+      <div className="bg-gray-50 p-8 md:p-12 rounded-[3.5rem] border border-gray-100 shadow-2xl shadow-emerald-900/5 print:hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           {/* Duration Selector */}
           <div>
@@ -178,14 +178,14 @@ export function ItineraryPlanner() {
                  </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 print:grid-cols-1 print:gap-4">
                 {result.map((step, idx) => (
                   <motion.div
                     key={idx}
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: idx * 0.1 }}
-                    className="p-8 bg-white rounded-[2.5rem] border border-gray-100 shadow-sm relative overflow-hidden group"
+                    className="p-8 bg-white rounded-[2.5rem] border border-gray-100 shadow-sm relative overflow-hidden group print:p-6 print:rounded-2xl print:border-gray-200 print:shadow-none print:break-inside-avoid"
                   >
                     <div className="absolute top-0 right-0 p-8 text-[4rem] font-black text-gray-50 -z-10 group-hover:text-emerald-500/5 transition-colors">
                       {step.day}
@@ -204,9 +204,19 @@ export function ItineraryPlanner() {
                 ))}
               </div>
 
-              <div className="pt-12 text-center">
+              <div className="pt-12 text-center print:hidden">
                  <p className="text-[10px] text-gray-400 uppercase tracking-widest font-black mb-4">Note: This is a suggested route. Every mountain path has its own timing.</p>
-                 <button className="text-emerald-600 font-black text-xs uppercase tracking-widest hover:underline">Download Archive PDF</button>
+                 <button 
+                   onClick={() => window.print()}
+                   className="text-emerald-600 font-black text-xs uppercase tracking-widest hover:underline"
+                 >
+                   Download Archive PDF
+                 </button>
+              </div>
+
+              {/* Print Footer */}
+              <div className="hidden print:block mt-16 pt-8 border-t border-gray-100 text-center text-[10px] text-gray-400 font-bold uppercase tracking-widest">
+                Document generated at explore-himachal.archive — Keep the Himalayas clean and trash-free.
               </div>
             </motion.div>
           )}
