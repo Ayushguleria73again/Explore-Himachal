@@ -68,15 +68,21 @@ export function ChatConsole() {
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({
+        top: scrollContainerRef.current.scrollHeight,
+        behavior: "smooth"
+      });
+    }
   };
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages, isLoading]);
+  }, [messages.length]);
 
   const handleSendMessage = async (textToSend: string) => {
     if (!textToSend.trim() || isLoading) return;
@@ -195,7 +201,10 @@ export function ChatConsole() {
         </div>
 
         {/* Message Feed */}
-        <div className="flex-grow p-10 overflow-y-auto space-y-6 bg-emerald-50/5 custom-scrollbar">
+        <div 
+          ref={scrollContainerRef}
+          className="flex-grow p-10 overflow-y-auto space-y-6 bg-emerald-50/5 custom-scrollbar"
+        >
           {messages.map((msg) => (
             <motion.div
               key={msg.id}
@@ -284,14 +293,20 @@ export function ChatConsole() {
           }}
           className="p-6 bg-white border-t border-gray-100 flex gap-4 items-center"
         >
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask Mela Ram about weather, treks, festivals or Dham..."
-            disabled={isLoading}
-            className="flex-grow px-6 py-5 bg-gray-50 border border-gray-150 rounded-2xl text-[14px] text-gray-900 placeholder-gray-400 focus:outline-none focus:border-emerald-500 focus:bg-white transition-all disabled:opacity-50 font-medium"
-          />
+          <div className="relative flex-grow flex items-center">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              maxLength={200}
+              placeholder="Ask Mela Ram about weather, treks, festivals or Dham..."
+              disabled={isLoading}
+              className="w-full pl-6 pr-16 py-5 bg-gray-50 border border-gray-150 rounded-2xl text-[14px] text-gray-900 placeholder-gray-400 focus:outline-none focus:border-emerald-500 focus:bg-white transition-all disabled:opacity-50 font-medium"
+            />
+            <span className="absolute right-6 text-[10px] font-bold text-gray-400 tracking-wider select-none bg-white/80 py-1 px-2 rounded-md">
+              {input.length}/200
+            </span>
+          </div>
           <button
             type="submit"
             disabled={!input.trim() || isLoading}

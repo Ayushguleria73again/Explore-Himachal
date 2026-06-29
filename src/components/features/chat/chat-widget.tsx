@@ -69,18 +69,24 @@ export function ChatWidget() {
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   // Auto-scroll to bottom of messages
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({
+        top: scrollContainerRef.current.scrollHeight,
+        behavior: "smooth"
+      });
+    }
   };
 
   useEffect(() => {
     if (isOpen) {
       scrollToBottom();
     }
-  }, [messages, isOpen, isLoading]);
+  }, [messages.length, isOpen]);
 
   const handleSendMessage = async (textToSend: string) => {
     if (!textToSend.trim() || isLoading) return;
@@ -183,7 +189,10 @@ export function ChatWidget() {
             </div>
 
             {/* Chat History Area */}
-            <div className="flex-grow p-6 overflow-y-auto space-y-4 custom-scrollbar select-none bg-emerald-50/10">
+            <div 
+              ref={scrollContainerRef}
+              className="flex-grow p-6 overflow-y-auto space-y-4 custom-scrollbar select-none bg-emerald-50/10"
+            >
               {messages.map((msg) => (
                 <motion.div
                   key={msg.id}
@@ -272,14 +281,20 @@ export function ChatWidget() {
               }}
               className="p-4 bg-white border-t border-gray-100 flex gap-3 items-center"
             >
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask about Dham, routes, weather..."
-                disabled={isLoading}
-                className="flex-grow px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-[13px] text-gray-900 placeholder-gray-400 focus:outline-none focus:border-emerald-500 focus:bg-white transition-all disabled:opacity-50 font-medium"
-              />
+              <div className="relative flex-grow flex items-center">
+                <input
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  maxLength={200}
+                  placeholder="Ask about Dham, routes, weather..."
+                  disabled={isLoading}
+                  className="w-full pl-5 pr-16 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-[13px] text-gray-900 placeholder-gray-400 focus:outline-none focus:border-emerald-500 focus:bg-white transition-all disabled:opacity-50 font-medium"
+                />
+                <span className="absolute right-4 text-[9px] font-bold text-gray-400 tracking-wider select-none bg-white/80 py-1 px-1.5 rounded-md">
+                  {input.length}/200
+                </span>
+              </div>
               <button
                 type="submit"
                 disabled={!input.trim() || isLoading}
